@@ -3,14 +3,14 @@ import { FaLaptopCode } from "react-icons/fa";
 import { BsBarChartLine } from "react-icons/bs";
 import { MdOutlineScience } from "react-icons/md";
 
-import courses1 from "./assets/courses1.jpg";
-import courses2 from "./assets/courses2.jpg";
-import courses3 from "./assets/courses3.jpg";
-import courses4 from "./assets/courses4.jpg";
-import courses5 from "./assets/courses5.jpg";
-import courses6 from "./assets/courses6.jpg";
-import courses7 from "./assets/courses7.jpg";
-import courses8 from "./assets/courses8.jpg";
+import courses1 from "./assets/courses1.jpeg";
+import courses2 from "./assets/courses2.jpeg";
+import courses3 from "./assets/courses3.jpeg";
+import courses4 from "./assets/courses4.jpeg";
+import courses5 from "./assets/courses5.jpeg";
+import courses6 from "./assets/courses6.jpeg";
+import courses7 from "./assets/courses7.jpeg";
+import courses8 from "./assets/courses8.jpeg";
 
 import logo1 from "./assets/logo1.png";
 import logo2 from "./assets/logo2.png";

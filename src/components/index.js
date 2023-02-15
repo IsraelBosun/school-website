@@ -1,9 +1,9 @@
 import Home from "./container/Home"
 import About from "./container/About"
 import Teacher from "./container/Teacher"
-import Course from "./container/Course/Course"
+import Courses from "./container/Course/Courses"
 import Contact from "./container/Contact"
 import Footer from "./container/Footer"
 import Navbar from "./Navbar/Navbar"
 
-export { Navbar, Home, About, Course, Contact, Teacher, Footer };
+export { Navbar, Home, About, Courses, Contact, Teacher, Footer };
