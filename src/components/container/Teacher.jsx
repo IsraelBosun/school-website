@@ -13,8 +13,7 @@ const Teacher = () => {
             Become <span>An Instructor  </span><br /> of Our platform
           </div>
           <p className='text-sm leading-7 text-gray mb-5'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis, voluptatem nulla consequatur quas aspernatur voluptatum molestias nostrum omnis earum.
-            </p>
+          Join our team of instructors and share your expertise with students around the world through our online Economics learning platform. Apply now!            </p>
             <button className='py-3 px-4 bg-Teal text-white rounded-lg text-sm font-bold'>
               Start Teaching
             </button>
@@ -25,10 +24,10 @@ const Teacher = () => {
 
         <div className='pl-5'>
           <div className='font-bold sm:text-[1.875rem] text-[1.5rem]'>
-            Become <span>An Instructor  </span><br /> of Our platform
+            Testimonials
           </div>
           <p className='text-sm leading-7 text-gray mb-5'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis, voluptatem nulla consequatur quas aspernatur voluptatum molestias nostrum omnis earum.
+          Hear from our satisfied students and learn how our courses have helped them achieve success in their academic and professional careers.
             </p>
             <button className='py-3 px-4 bg-Teal text-white rounded-lg text-sm font-bold'>
               Get Started

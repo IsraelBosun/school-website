@@ -9,8 +9,7 @@ const Contact = () => {
           Subscribe to Newsletter
         </div>
         <p className='text-sm leading-7 text-gray'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit pariatur voluptatum unde est placeat repellendus quam at sequi hic!
-        </p>
+        Never miss a beat in the world of economics - subscribe to our newsletter and receive updates on our latest courses and learning resources.        </p>
         <motion.form
         initial = {{ scale: 0 }}
         whileInView = {{ scale: 1 }}
@@ -22,7 +21,7 @@ const Contact = () => {
           placeholder='Enter Your Email Address'
           className='sm:p-3 p-2 outline-none text-sm shadow-md sm:w-72 w-60'
           />
-          <button className='text-sm text-white bg-Teal sm:p-3 p-2 shadow-md font-bold'>
+          <button className='text-sm text-white bg-Teal  sm:p-3 p-2 shadow-md font-bold'>
             Subscribe
           </button>
         </motion.form>

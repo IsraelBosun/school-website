@@ -28,8 +28,8 @@ const Courses = () => {
           Our Top <span className='text-Teal'>Categories</span>
         </div>
         <p className='text-sm text-gray leading-7 max-width-[700px] mx-auto'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo illo quibusdam sed, nemo eaque eos ipsam voluptatem nihil tempora minima, culpa, molestiae numquam saepe aliquid minus officiis nisi harum.
-        </p>
+        Our Economics tutorial website offers a wide range of top categories to choose from, including macroeconomics, microeconomics, finance, international trade, and economic history       
+         </p>
       </div>
       <motion.div
       variants = {container}

@@ -14,16 +14,15 @@ const Footer = () => {
         <div>
           <div className='font-bold mb-6'>Get Stated</div>
           <p className='text-sm leading-7'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga eaque quas beatae nihil alias dicta iusto illum?
-          </p>
+          Ready to jump in? Enroll in our courses today and start your journey towards mastering economics.          </p>
         </div>
         <div>
           <div className='font-bold mb-6'>Services</div>
           <div className='flex flex-col gap-4' >
-            <a href="" className='text-sm hover:underline'>Web Design</a>
-            <a href="" className='text-sm hover:underline'>Web Development</a>
-            <a href="" className='text-sm hover:underline'>Science</a>
-            <a href="" className='text-sm hover:underline'>Digital Marketing</a>
+            <a href="" className='text-sm hover:underline'>Tutorials</a>
+            <a href="" className='text-sm hover:underline'>Resources</a>
+            <a href="" className='text-sm hover:underline'>Newsletter</a>
+            <a href="" className='text-sm hover:underline'>Blog</a>
           </div>
         </div>
         <div>
@@ -38,7 +37,7 @@ const Footer = () => {
         <div>
           <div className='font-bold mb-6'>Follow Us</div>
           <div className='text-sm mb-4'>
-            skillteslearning@gmail.com
+            mogschoolofeconomics@gmail.com
           </div>
           <div className ="text-sm">+234950949333</div>
           <div className='flex gap-4 mt-4' >
