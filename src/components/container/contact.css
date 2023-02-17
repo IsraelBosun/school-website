@@ -1,0 +1,68 @@
+.container.testimonials__container {
+    display: block;
+    position: relative;
+}
+
+.testimonials__swiper {
+    display: flex;
+    flex-direction: column;
+    color: #e9e9ea;
+    text-align: center;
+    gap: 2rem;
+    line-height: 1.7;
+    background: #2F6C6D;
+    padding: 1rem 0.5rem;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+.client__avatar {
+    margin-top: 3rem;
+    width: 9rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid #2F6C6D;
+}
+
+
+
+.testimonials__nameschool {
+    color: white;
+}
+
+.testi__school {
+    font-weight: 600;
+}
+
+.testimonials__reviews h5  {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -5rem;
+}
+
+.testimonials__reviews h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+    color: #2F6C6D;
+}
+
+.swiper-pagination {
+    position: absolute;
+    
+}
+
+.hail {
+    margin-top: 4rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    
+}

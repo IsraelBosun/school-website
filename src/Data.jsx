@@ -19,6 +19,14 @@ import logo4 from "./assets/logo4.png";
 import logo5 from "./assets/logo5.png";
 import logo6 from "./assets/logo6.png";
 
+import AVTR1 from  "./assets/favour.jpg";
+import AVTR2 from  "./assets/Timilehin.jpeg";
+import AVTR3 from  "./assets/Raji.jpg";
+import AVTR4 from  "./assets/Aliyu.jpeg";
+import AVTR5 from  "./assets/Ganiyu.jpg";
+import AVTR6 from  "./assets/Bukola.jpg";
+
+
 export const navLinks = [
   {
     id: 1,
@@ -165,3 +173,43 @@ export const accordions = [
     title: "How much do your courses cost?",
   },
 ];
+
+
+export const data = [
+  {
+    avatar: AVTR1,
+    review: "I've been taking online economics tutorials for two years to catch up on my studies. I find the lessons enjoyable and accommodating, with an effective teaching approach that corrects errors before demonstrating how to do things correctly. Overall, it's been a positive experience and I've learned a lot.",
+    name: "Favour",
+    school: "Ekiti State University"
+  },
+  {
+    avatar: AVTR2,
+    review: "I highly recommend the economics classes as they have helped me overcome the challenges I faced in economics. The platform is great for problem-solving and has been an excellent resource for me.",
+    name: "Ogunwewimo Timileyin",
+    school: "Olabisi Onabanjo University"
+  },
+  {
+    avatar: AVTR3,
+    review: "MOG ECONOMICS has been a great blessing to me since day one. The program's standard exams, brainstorming, assignments, and quizzes have improved my grades and understanding of economics. I appreciate how it thoroughly covers all necessary topics for each semester, giving me the confidence to defend myself as an economics student. I am sincerely grateful for the program's efforts and highly recommend it.",
+    name: "Raji Opeyemi",
+    school: "Ekiti State University"
+  },
+  {
+    avatar: AVTR4,
+    review: "MOG economics has really helped me alot especially in the mathematical aspect of Economics. The explanations on various topics are clear enough to understand. Thank you MOG economics for this.",
+    name: "Aliu Funmilayo",
+    school: "University of Ibadan"
+  },
+  {
+    avatar: AVTR5,
+    review: "My name is Ganiyu Dasola. A student of University of Ibadan.I just want to say Thank you to MOG class.Thank you for answering my questions,even the smallest one.And  thank you for helping me understand the courses I'm confused about.MOG class makes learning more enjoyable.",
+    name: "Ganiyu Dasola.",
+    school: "University of Ibadan"
+  },
+  {
+    avatar: AVTR6,
+    review: "My name is Bukola Oke, a 300 level Economics student of the University Of Ibadan. MOG Economics brought light to my understanding of Economics when I enrolled in year 2, it took me away from the cramming which I did in year 1, to even teaching my colleagues in year 2 and 3. Thank you MOG Economics.",
+    name: "Bukola Oke.",
+    school: "University of Ibadan"
+  }
+]

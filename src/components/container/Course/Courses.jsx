@@ -32,7 +32,7 @@ const Courses = () => {
          </p>
       </div>
       <motion.div
-      variants = {container}
+      variants = {container}how 
       initial = "hidden"
       whileInView="visible"
       className='grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8'>
