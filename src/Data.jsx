@@ -1,5 +1,5 @@
-import { FiPenTool } from "react-icons/fi";
-import { FaLaptopCode } from "react-icons/fa";
+import { BsBook } from "react-icons/bs";
+import { BsFillPenFill } from "react-icons/bs";
 import { BsBarChartLine } from "react-icons/bs";
 import { MdOutlineScience } from "react-icons/md";
 
@@ -25,6 +25,7 @@ import AVTR3 from  "./assets/Raji.jpg";
 import AVTR4 from  "./assets/Aliyu.jpeg";
 import AVTR5 from  "./assets/Ganiyu.jpg";
 import AVTR6 from  "./assets/Bukola.jpg";
+import AVTR7 from  "./assets/popoola.jpeg";
 
 
 export const navLinks = [
@@ -58,25 +59,63 @@ export const navLinks = [
 export const categories = [
   {
     id: 1,
-    icon: <FiPenTool />,
-    category: "Microeconomics",
+    icon: <BsBook />,
+    category: "100L",
+    view : "View Courses",
   },
   {
     id: 2,
-    icon: <FaLaptopCode />,
-    category: "Macoeconomics",
+    icon: <BsFillPenFill />,
+    category: "200L",
+    view : "View Courses",
+    
   },
   {
     id: 3,
     icon: <BsBarChartLine />,
-    category: "Econometrics",
+    category: "300L",
+    view : "View Courses",
+  },
+//   {
+//     id: 4,
+//     icon: <MdOutlineScience />,
+//     category: "Research Writing",
+//     view : "View More",
+//   },
+];
+
+export const subjects = [
+  {
+    id: 1, 
+    level: "100L",
+    first: "1. Microeconomics for beginners",
+    second: "2. Mathematical Economics for beginners",
+    third: "3. Macroeconomics for beginners",
+    forth: "4. The Nigerian Economy",
+    fifth: "5. Research writing",
+    button: "Enroll"
   },
   {
-    id: 4,
-    icon: <MdOutlineScience />,
-    category: "Research Writing",
+    id: 2,
+    level: "200L",
+    first: "1. Intermediate Microeconomics I",
+    second: "2. Intermediate Mathematical Economics I",
+    third: "3. Intermediate Macroeconomics I",
+    forth: "4. Economic Development",
+    fifth: "5. Research writing",
+    button: "Enroll"
   },
-];
+  {
+    id: 3,
+    level: "300L",
+    first: "1. Intermediate Microeconomics II",
+    second: "2. Intermediate Mathematical Economics II",
+    third: "3. Intermediate Macroeconomics II",
+    forth: "4. Econometrics",
+    fifth: "5. Research writing",
+    button: "Enroll"
+  },
+]
 
 export const courses = [
   {
@@ -178,38 +217,44 @@ export const accordions = [
 export const data = [
   {
     avatar: AVTR1,
-    review: "I've been taking online economics tutorials for two years to catch up on my studies. I find the lessons enjoyable and accommodating, with an effective teaching approach that corrects errors before demonstrating how to do things correctly. Overall, it's been a positive experience and I've learned a lot.",
+    review: "I've been taking online EconomicsEconomics tutorials for two years to catch up on my studies. I find the lessons enjoyable and accommodating, with an effective teaching approach that corrects errors before demonstrating how to do things correctly. Overall, it's been a positive experience and I've learned a lot.",
     name: "Favour",
-    school: "Ekiti State University"
+    school: "University Of Ibadan"
   },
   {
     avatar: AVTR2,
-    review: "I highly recommend the economics classes as they have helped me overcome the challenges I faced in economics. The platform is great for problem-solving and has been an excellent resource for me.",
+    review: "I highly recommend the Economics classes as they have helped me overcome the challenges I faced in Economics. The platform is great for problem-solving and has been an excellent resource for me.",
     name: "Ogunwewimo Timileyin",
     school: "Olabisi Onabanjo University"
   },
   {
     avatar: AVTR3,
-    review: "MOG ECONOMICS has been a great blessing to me since day one. The program's standard exams, brainstorming, assignments, and quizzes have improved my grades and understanding of economics. I appreciate how it thoroughly covers all necessary topics for each semester, giving me the confidence to defend myself as an economics student. I am sincerely grateful for the program's efforts and highly recommend it.",
+    review: "MOG ECONOMICS has been a great blessing to me since day one. The program's standard exams, brainstorming, assignments, and quizzes have improved my grades and understanding of Economics. I appreciate how it thoroughly covers all necessary topics for each semester, giving me the confidence to defend myself as an Economics student. I am sincerely grateful for the program's efforts and highly recommend it.",
     name: "Raji Opeyemi",
-    school: "Ekiti State University"
+    school: "University Of Ibadan"
   },
   {
     avatar: AVTR4,
-    review: "MOG economics has really helped me alot especially in the mathematical aspect of Economics. The explanations on various topics are clear enough to understand. Thank you MOG economics for this.",
+    review: "MOG Economics has really helped me a lot especially in the mathematical aspect of Economics. The explanations on various topics are clear enough to understand. Thank you MOG Economics for this.",
     name: "Aliu Funmilayo",
     school: "University of Ibadan"
   },
   {
     avatar: AVTR5,
-    review: "My name is Ganiyu Dasola. A student of University of Ibadan.I just want to say Thank you to MOG class.Thank you for answering my questions,even the smallest one.And  thank you for helping me understand the courses I'm confused about.MOG class makes learning more enjoyable.",
+    review: "My name is Ganiyu Dasola. A student of University of Ibadan.I just want to say Thank you to MOG class. Thank you for answering my questions,even the smallest one.And  thank you for helping me understand the courses I'm confused about.MOG class makes learning more enjoyable.",
     name: "Ganiyu Dasola.",
     school: "University of Ibadan"
   },
   {
     avatar: AVTR6,
-    review: "My name is Bukola Oke, a 300 level Economics student of the University Of Ibadan. MOG Economics brought light to my understanding of Economics when I enrolled in year 2, it took me away from the cramming which I did in year 1, to even teaching my colleagues in year 2 and 3. Thank you MOG Economics.",
+    review: "MOG Economics makes me find my fitting in the school of Economics. It has been the reason for being naturally ahead with the aid of their well simplified concepts in mathematical Economics and theories. I bless the day u get to know about the academy.",
     name: "Bukola Oke.",
     school: "University of Ibadan"
-  }
+  },
+  {
+    avatar: AVTR7,
+    review: "My name is Bukola Oke, an Economics student of the University Of Ibadan. MOG Economics brought light to my understanding of Economics when I enrolled in year 2, it took me away from the cramming which I did in year 1, to even teaching my colleagues in year 2 and 3. Thank you MOG Economics.",
+    name: "Popoola Matthew",
+    school: "Ahmadu Bello University"
+  },
 ]

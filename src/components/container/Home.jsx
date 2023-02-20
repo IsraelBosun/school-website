@@ -33,7 +33,7 @@ const Home = () => {
             Simplifying  Economics <br /> for university  Students
           </div>
           <p className="text-sm leading-7 text-gray max-w-sm">
-            MOG simplifies economics for students with engaging tutorials and interactive exercises. Start learning today!
+            MOG simplifies Economics for students with engaging tutorials and interactive exercises. Start learning today!
           </p>
           <div className="mt-6">
             <button className="px-6 py-3 font-bold text-white bg-Teal rounded-lg mr-4 text-sm">

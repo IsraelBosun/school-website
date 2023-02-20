@@ -59,10 +59,13 @@
 }
 
 .hail {
-    margin-top: 4rem;
+    margin-top: 14rem;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 10px;
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: relative;
+    margin-top: 1.5rem;
+  
+    
     
 }

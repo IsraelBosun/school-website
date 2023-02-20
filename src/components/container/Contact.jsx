@@ -48,7 +48,7 @@ const Contact = () => {
           Subscribe to Newsletter
         </div>
         <p className='text-sm leading-7 text-gray'>
-        Never miss a beat in the world of economics - subscribe to our newsletter and receive updates on our latest courses and learning resources.        </p>
+        Never miss a beat in the world of Economics - subscribe to our newsletter and receive updates on our latest courses and learning resources.        </p>
         <motion.form
         initial = {{ scale: 0 }}
         whileInView = {{ scale: 1 }}
