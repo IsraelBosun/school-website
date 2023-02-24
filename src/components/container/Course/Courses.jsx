@@ -18,7 +18,7 @@ const Courses = () => {
         scale: 1,
         transition: {
           delayChildren: 0.3,
-          staggerChilden: 0.2,
+          staggerChildren: 0.2,
         },
       },
     };
@@ -26,7 +26,7 @@ const Courses = () => {
     const [showSubjects, setShowSubjects] = useState(true);
 
     const handleClick = () => {
-      setShowSubjects(prev => !prev)
+      setShowSubjects(!showSubjects)
     }
 
   return (
@@ -44,24 +44,24 @@ const Courses = () => {
         {showSubjects ? (
           <>
               <motion.div
-                variants = {container}how 
+                variants = {container}
                 initial = "hidden"
                 whileInView="visible"
                 className='grid md:grid-cols-3 sm:grid-cols-2 mt-12 gap-8'>
                 {categories.map(category => {
-                  return <Categories key = {category.id} {... category} />
+                  return <Categories key = {category.id} {...category} />
                 })}
                 </motion.div>
           </>
         ) : (
           <>
                 <motion.div
-                variants = {container}how 
+                variants = {container}
                 initial = "hidden"
                 whileInView="visible"
-                className='grid transform ${show ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"} transition duration-500 ease-in-out md:grid-cols-3 sm:grid-cols-2 mt-12 gap-8 transition duration-500 ease-in-out'>
+                className={`grid transform ${showSubjects ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"} transition duration-500 ease-in-out md:grid-cols-3 sm:grid-cols-2 mt-12 gap-8 transition duration-500 ease-in-out`}>
                 {subjects.map(subject => {
-                  return <Categories key = {subject.id} {...subject} />
+                  return <Subjects key = {subject.id} {...subject} />
                 })}
                 </motion.div>
           </>

@@ -92,7 +92,6 @@ export const subjects = [
     second: "2. Mathematical Economics for beginners",
     third: "3. Macroeconomics for beginners",
     forth: "4. The Nigerian Economy",
-    fifth: "5. Research writing",
     button: "Enroll"
   },
   {
@@ -102,7 +101,6 @@ export const subjects = [
     second: "2. Intermediate Mathematical Economics I",
     third: "3. Intermediate Macroeconomics I",
     forth: "4. Economic Development",
-    fifth: "5. Research writing",
     button: "Enroll"
   },
   {

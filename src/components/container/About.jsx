@@ -1,5 +1,6 @@
 import React from 'react'
 import about from "../../assets/About.jpeg"
+import { Link } from "react-router-dom"
 
 const About = () => {
   return (
@@ -13,9 +14,11 @@ const About = () => {
           <p className='text-sm text-gray leading-7'>
           Our online Economics courses are designed to help university students excel in their coursework by providing a strong foundation in fundamental concepts and practical applications.
             </p>
-            <button className='py-3 px-6 text-sm border border-solid border-gray rounded-lg font-bold'>
+            <Link to = "/MoreInfo">
+            <button className='mt-9 py-3 px-6 text-sm border border-solid border-gray rounded-lg font-bold hover:bg-Teal hover:text-white hover:border-none'>
               Know More
             </button>
+            </Link>
         </div>
       </div>
     </div>

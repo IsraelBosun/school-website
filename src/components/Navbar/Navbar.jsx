@@ -3,7 +3,10 @@ import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import MobileNavLinks from "./MobileNavLinks";
 import NavLink from "./NavLink";
+import { Link } from "react-router-dom"
 import { motion } from "framer-motion";
+
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState(null);
@@ -18,7 +21,7 @@ const Navbar = () => {
     <div
       className={`${
         active ? "shadow-lg bg-Solitude" : ""
-      } fixed w-full top-0 left-0 z-20`}
+      } sticky w-full top-0 left-0 z-20`}
     >
       <div>
         <div
@@ -31,9 +34,11 @@ const Navbar = () => {
               className="text-3xl sm:hidden cursor-pointer"
               onClick={() => setToggle(true)}
             />
+            <Link to = "/">
             <div className="text-xl text-Teal uppercase tracking-wide font-bold">
               MOG
             </div>
+            </Link>
           </div>
           <div className="sm:flex items-center hidden">
             {navLinks.map((navLink) => {
