@@ -5,22 +5,43 @@ import Bukola from "../../assets/Bukola.jpg"
 const MoreInfo = () => {
   return (
     <div >
-      <div className=' info h-[15rem] bg-red-100 w-full  py-[60px]'>
-          <h1 className='text-Teal text-4xl text-center'>The MOG Story</h1>
-          <h5 className='text-Teal text-2xl text-center mt-6'>We know Economics, in fact we wrote a book on it</h5>
+      <div className=' info h-[10rem] bg-red-100 w-full  py-[60px]'>
+          <h1 className='text-Teal font-bold sm:text-[1.875rem] text-[1.5rem] text-center'>The MOG Story</h1>
+          <h5 className='text-sm text-Teal   text-center mt-4'>Our Modus Operandi</h5>
       </div>
-      <div className='bg-white-100 text-2xl w-5/6 mx-auto text-center my-9 '>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed? Tenetur nemo beatae atque explicabo aspernatur maiores culpa! Harum neque vel non facere, modi error voluptatibus dolore, dolores ab reprehenderit, quod dolor architecto consequatur tenetur quisquam. Ex dignissimos itaque aut consectetur similique doloribus minima ipsum quisquam! Id laboriosam commodi animi, tempore dolores ex voluptatem eum, modi at unde repellat iure accusantium veritatis minus. Ea esse natus voluptates fugiat! Maiores eveniet perferendis neque nulla commodi!
+      <div className='bg-white-100 text-sm text-gray  font-bold leading-7 w-5/6 mx-auto text-center my-9 '>
+        <p className = "mt-5 font-bold">
+       <span className='text-5xl'>W</span>elcome to our online economics class, where learning is made easy, convenient, and accessible from anywhere in the world. Our classes are designed to provide you with the best economics education that will help you understand how the economy works, and how you can make informed decisions about your finances.
           </p>
+          <p className = "mt-5 font-bold">
+          Our courses are taught by expert tutors who are highly experienced in the field of economics. We use a combination of lectures, discussions, and interactive sessions to ensure that you get the most out of your learning experience. Our classes are available on-demand, which means you can learn at your own pace and on your own schedule.
+          </p>
+          <p className = "mt-5 font-bold">
+          As a paid student, you will get access to our exclusive YouTube page where our tutors post relevant videos for the courses. These videos cover a wide range of topics, from the basic co font-boldncepts of economics to the more advanced principles. They are designed to help you understand complex ideas in a simple and easy-to-understand way.
+          </p >
+          <p className = "mt-5 font-bold">
+          You will also get access to our WhatsApp group, where you can interact with other students and our tutors. This is a great way to ask questions, discuss course materials, and get feedback on your work. You will also receive regular tests and to-dos that will help you track your progress and stay on top of your coursework.
+          </p>
+          <p className = "mt-5 font-bold">
+          At our economics class, we believe that everyone should have access to quality education, regardless of their location or financial situation. That's why we offer affordable prices and flexible payment options to make our courses accessible to everyone.
+          </p>
+          <p className = "mt-5 font-bold">
+          So if you're looking to improve your understanding of economics, enhance your career prospects, or simply want to learn something new, join our economics class today and take your first step towards a brighter future!
+          </p>
+          
       </div>
       <div className='bg-red-100  md:flex justify-center items-center gap-[4rem] mx-auto p-[3rem] '>
         <div className='w-auto'> 
           <img src={Bukola} alt="" /> 
           </div>
         <div>
-          <h1 className='text-3xl text-center font-900'>Meet The Founder</h1>
-          <p className='text-2xl mt-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eius cumque odio ea eos unde facere sunt explicabo eligendi ex expedita mollitia sapiente porro temporibus ipsum rem itaque veniam minus quae iste at amet asperiores assumenda sit. Sint accusamus, neque cum repellat corporis et. Aspernatur corporis in non vero amet.</p>
+          <h1 className=' mt-5 sm:text-[1.875rem] text-[1.5rem] text-center font-900'>Meet The Founder</h1>
+          <p className='text-sm text-gray text-center leading-7 font-bold mt-6'>Mr. Oluwole Godwin, who brings a wealth of knowledge and experience to our economics class. Mr. Doe is a graduate of the prestigious University of Ibadan, where he studied economics and graduated with honors. Mr. Godwin is a skilled and engaging teacher who uses a variety of teaching methods to ensure that his students understand the material. He is dedicated to his students and goes above and beyond to help them succeed.
+
+
+          </p>
+          <p className='text-sm text-gray text-center leading-7 font-bold font-bold mt-6'>We are proud to have Mr. Godwin as our head tutor, and we are confident that his expertise and dedication will help our students achieve their goals and succeed in their economics studies.
+          </p>
         </div>
       </div>
     </div>
