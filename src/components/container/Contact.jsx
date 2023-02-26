@@ -25,7 +25,7 @@ const Contact = () => {
             {
               data.map(({ avatar, name, review, school }, index) => {
                 return(
-                  <SwiperSlide key={index} className ="testimonials__swiper">
+                  <SwiperSlide key={index} className ="testimonials__swiper text-sm ">
                       <div className='testimonials__swiper'>
                       <div className='client__avatar'>
                         <img src={avatar} alt="" />

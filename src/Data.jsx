@@ -215,7 +215,7 @@ export const accordions = [
 export const data = [
   {
     avatar: AVTR1,
-    review: "I've been taking online EconomicsEconomics tutorials for two years to catch up on my studies. I find the lessons enjoyable and accommodating, with an effective teaching approach that corrects errors before demonstrating how to do things correctly. Overall, it's been a positive experience and I've learned a lot.",
+    review: "I've been taking online Economics tutorials for two years to catch up on my studies. I find the lessons enjoyable and accommodating, with an effective teaching approach that corrects errors before demonstrating how to do things correctly. Overall, it's been a positive experience and I've learned a lot.",
     name: "Favour",
     school: "University Of Ibadan"
   },
@@ -245,14 +245,15 @@ export const data = [
   },
   {
     avatar: AVTR6,
-    review: "MOG Economics makes me find my fitting in the school of Economics. It has been the reason for being naturally ahead with the aid of their well simplified concepts in mathematical Economics and theories. I bless the day u get to know about the academy.",
+    review: "My name is Bukola Oke, an Economics student of the University Of Ibadan. MOG Economics brought light to my understanding of Economics when I enrolled in year 2, it took me away from the cramming which I did in year 1, to even teaching my colleagues in year 2 and 3. Thank you MOG Economics.",
     name: "Bukola Oke.",
     school: "University of Ibadan"
   },
   {
     avatar: AVTR7,
-    review: "My name is Bukola Oke, an Economics student of the University Of Ibadan. MOG Economics brought light to my understanding of Economics when I enrolled in year 2, it took me away from the cramming which I did in year 1, to even teaching my colleagues in year 2 and 3. Thank you MOG Economics.",
+    review: "MOG Economics makes me find my fitting in the school of Economics. It has been the reason for being naturally ahead with the aid of their well simplified concepts in mathematical Economics and theories. I bless the day u get to know about the academy.",
     name: "Popoola Matthew",
     school: "Ahmadu Bello University"
   },
 ]
+

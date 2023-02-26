@@ -12,7 +12,7 @@ const Categories = ({ icon, category, view }) => {
     <motion.div
       // variants={item}
       whileHover={{ scale: 1.1 }}
-      className="flex items-center flex-col gap-4 bg-white p-8 rounded-md max-h-full overflow-y-auto"
+      className="flex items-center flex-col gap-4 bg-white p-8 rounded-md max-h-full overflow-y-auto text-sm"
     >
       <div className="text-4xl text-Teal">{icon}</div>
       <div>{category}</div>

@@ -16,20 +16,22 @@ const Subjects = ({ level, first, second, third, forth, fifth, button }) => {
           {level}
           
         </div>
-        <p className="text-center my-2">First Semester</p>
-        <ul className="mx-1 p-2 flex flex-col gap-3 border rounded-lg bg-Teal text-white hover:bg-white hover:text-Teal">
+        <p className="text-center my-2 text-sm font-bold">First Semester</p>
+        <ul className="mx-2 p-2 flex flex-col gap-3 border rounded-lg hover:bg-white hover:text-Teal text-xs">
           <li>{first}</li>
           <li>{second}</li>
         </ul >
-        <p className="text-center mt-7 py-2">Second Semester</p>
-        <ul className="mx-1 p-2 pt-8 flex flex-col gap-3 border rounded-lg bg-Teal text-white hover:bg-white hover:text-Teal">
+        <p className="text-center mt-7 py-2 text-sm font-bold">Second Semester</p>
+        <ul className="mx-2 p-2  flex flex-col gap-3 border rounded-lg  hover:bg-white hover:text-Teal text-xs">
           <li>{third}</li>
           <li>{forth}</li>
           <li>{fifth}</li>
         </ul>
-            <div className="flex justify-center">
-          <button className=" bg-Teal text-white hover:bg-white hover:text-Teal border text-center px-4 py-1 mx-auto m-3 max-w-full  rounded-md">{button}</button>
+            <div className=" mt-5 flex justify-center text-sm">
+          <button className=" bg-Teal text-white hover:bg-white hover:text-Teal border text-center px-6 py-2 mx-auto  max-w-full  rounded-md">{button}</button>
+          
           </div>
+          <p className="text-center text-[12px] font-bold "> NB: Each  Semester lasts for 3 months</p>
       </motion.div>
   )
 }
