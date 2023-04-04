@@ -29,11 +29,11 @@ import AVTR7 from  "./assets/popoola.jpeg";
 
 
 export const navLinks = [
-  {
-    id: 1,
-    href: "home",
-    link: "Home",
-  },
+  // {
+  //   id: 1,
+  //   href: "home",
+  //   link: "Home",
+  // },
   {
     id: 2,
     href: "about",
@@ -41,17 +41,17 @@ export const navLinks = [
   },
   {
     id: 3,
-    href: "courses",
+    href: "/courses",
     link: "Courses",
   },
   {
     id: 4,
-    href: "teacher",
-    link: "Teacher",
+    href: "tutors",
+    link: "Tutors",
   },
   {
     id: 5,
-    href: "contact",
+    href: "contactus",
     link: "Contact",
   },
 ];
@@ -116,7 +116,7 @@ export const subjects = [
 ]
 
 export const courses = [
-  {
+   {
     id: 1,
     image: courses1,
     category: "Microeconomics",
@@ -124,6 +124,7 @@ export const courses = [
     rating: 4.9,
     participants: 500,
     price: "#1000",
+    Level: 100,
   },
   {
     id: 2,
@@ -133,6 +134,7 @@ export const courses = [
     rating: 4.8,
     participants: 700,
     price: "#1200",
+    Level: 100,
   },
   {
     id: 3,
@@ -141,7 +143,8 @@ export const courses = [
     title: "Macroeconomics for beginners",
     rating: 4.9,
     participants: 300,
-    price: "#9900"
+    price: "#9900",
+    Level: 100,
   },
   {
     id: 4,
@@ -150,7 +153,8 @@ export const courses = [
     title: "The Nigerian Economy",
     rating: 4.7,
     participants: 600,
-    price: "#8500"
+    price: "#8500",
+    Level: 100,
   },
   {
     id: 5,
@@ -160,6 +164,7 @@ export const courses = [
     rating: 4.9,
     participants: 500,
     price: "#1050",
+    Level: 200,
   },
   {
     id: 6,
@@ -169,6 +174,7 @@ export const courses = [
     rating: 4.9,
     participants: 500,
     price: "#1050",
+    Level: 300,
   },
   {
     id: 7,
@@ -178,6 +184,7 @@ export const courses = [
     rating: 4.9,
     participants: 500,
     price: "#1050",
+    Level: 300,
   },
   {
     id: 8,
@@ -187,6 +194,7 @@ export const courses = [
     rating: 4.9,
     participants: 500,
     price: "#1050",
+    Level: 200,
   },
 ];
 
@@ -256,4 +264,49 @@ export const data = [
     school: "Ahmadu Bello University"
   },
 ]
+
+export const tutors = [
+  {
+  id: 1,
+  image: courses1,
+  name: 'Sola Adebowale',
+  job: 'Principles of Microeconomics',
+  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  },
+  {
+  id: 2,
+  image: courses2,
+  name: 'Daniel Akinlade',
+  job: 'Macroeconomic Theory',
+  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  },
+  {
+  id: 3,
+  image: courses3,
+  name: 'Edem Okonkwo',
+  job: 'International Trade',
+  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  },
+  {
+  id: 4,
+  image: courses4,
+  name: 'Chukwuemeka Onyekachi',
+  job: 'Development Economics',
+  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  },
+  {
+  id: 5,
+  image: courses5,
+  name: 'Diana Okafor',
+  job: 'Monetary Economics',
+  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  },
+  {
+  id: 6,
+  image: courses6,
+  name: 'Wayne Adeleke',
+  job: 'Econometrics',
+  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  }
+  ]
 

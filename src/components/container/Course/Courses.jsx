@@ -74,7 +74,7 @@ const Courses = () => {
       <div className='text-xl font-bold mt-32'>Most Popular Courses</div>
       <div className='mt-12 overflow-x-hidden w-full  relative'>
         <div className='flex gap-8 md:w-full sm:w-[170%] xs:w-[340%] w-[480%] animate-slide'>
-          {courses.map(course => {
+          {courses.slice( 0, 4 ).map(course => {
             return <Course key = {course.id} {...course} />
           })}
         </div>

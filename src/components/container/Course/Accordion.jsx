@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const Accordion = ({ id, title }) => {
     const [activeIndex, setActiveIndex] = useState(null);
+    
     const handleClick = (id) => {
         setActiveIndex(id === activeIndex ? null : id)
     };

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const Footer = () => {
   return (
-    <motion.div
+    <div
     initial = {{height: 0 }}
     whileInView = {{ height: "auto "}}
     transition = {{ duration: 1 }}
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

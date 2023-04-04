@@ -16,8 +16,7 @@ const Teacher = () => {
           <p className='text-sm leading-7 text-gray mb-5'>
           Experience a taste of our engaging and insightful Economics classes in this video. Join us for a deeper exploration of the fascinating world of Economics. 
           </p>
-         
-        </div>
+          </div>
         {/* <div className='p-4 md:w-3/4 sm:row-start-1'>
           <img src={teacher1} alt="" />
         </div> */}
