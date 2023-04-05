@@ -34,7 +34,7 @@ const ContactUs = () => {
             </div>
            </div>
 
-           <div className='mt-5 bg-Solitude shadow-md text-gray-500 opacity- p-8 rounded-3xl' >
+           <div className='mt-5 bg-Solitude shadow-xl text-gray-500 opacity- p-8 rounded-3xl' >
             {/* Your Name
             <form action="" className='flex flex-col gap-3'>
                 <input  type="text" />
@@ -47,14 +47,14 @@ const ContactUs = () => {
 
 <form className="max-w-md mx-auto">
       <label htmlFor="name" className="block mb-2 font-semibold">Name</label>
-      <input type="text" id="name" name="name" className="w-full px-4 py-2 mb-4 border rounded outline-Teal" />
+      <input type="text" id="name" name="name" className="w-full px-4 py-2 mb-4 border rounded outline-Teal"  />
       <label htmlFor="email" className="block mb-2 font-semibold">Email</label>
       <div className="relative flex">
-        <input type="email" id="email" name="email" className="w-full px-4 py-2 mb-4 border rounded"  />
+        <input type="email" id="email" name="email" className="w-full px-4 py-2 mb-4 border rounded outline-Teal"  />
         {/* <AiOutlineMail className="absolute left-2  top-1 text-3xl  text-Teal" /> */}
       </div>
       <label htmlFor="message" className="block mb-2 font-semibold">Message</label>
-      <textarea id="message" name="message" rows="4" className="w-full px-4 py-2 mb-4 border rounded" />
+      <textarea id="message" name="message" rows="4" className="w-full px-4 py-2 mb-4 border rounded outline-Teal" placeholder='Write to us' />
       <button type="submit" className=" bg-Teal text-white  px-4 py-2 rounded hover:bg-blue-600">Submit</button>
     </form>
 

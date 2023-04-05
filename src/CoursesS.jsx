@@ -102,7 +102,7 @@ const CoursesS = () => {
     <Header title = "Our Courses" image = {About}>
     Discover our wide range of economics courses and find the perfect one for your goals!
     </Header>
-    <div className='section'>
+    <div className=''>
 
     
         <div className='px-[30px] py-6 max-w-[1170px] mx-auto flex flex-col lg:flex-row justify-between gap-4 lg:gap-x-3 relative lg:-top-4 lg:shadow-1 bg-white lg:bg-transparent lg:backdrop-blur rounded-lg'>
@@ -168,7 +168,7 @@ const CoursesS = () => {
                 <RiSearch2Line />
             </button>
         </div>
-        <div className=' grid md:grid-cols-3 sm:grid-cols-2 mt-12 gap-8'>
+        <div className='section grid md:grid-cols-3 sm:grid-cols-2  gap-8'>
         {
             course.map((course) => {
                 return <CoursesBody className = "hidden" key={course.id} {...course} />

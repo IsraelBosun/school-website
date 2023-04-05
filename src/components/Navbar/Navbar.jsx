@@ -4,6 +4,7 @@ import { HiMenuAlt1, HiX } from "react-icons/hi";
 import MobileNavLinks from "./MobileNavLinks";
 import NavLink from "./NavLink";
 import { Link } from "react-router-dom"
+import { AiOutlineShoppingCart } from "react-icons/ai"
 import { motion } from "framer-motion";
 
 
@@ -47,8 +48,9 @@ const Navbar = () => {
               return <NavLink key={navLink.id} {...navLink} />;
             })}
           </div>
-          <button className="py-3 px-6 font-bold text-sm border border-solid rounded-lg border-gray">
-            Sign Up
+          <button className="relative py-3 px-6 font-bold text-Teal text-3xl">
+            <AiOutlineShoppingCart />
+            <div className="absolute top-1 right-5  w-[20%] text-xs bg-red-700 text-white  rounded-[100%]">1</div>
           </button>
           {toggle && (
             <motion.div
