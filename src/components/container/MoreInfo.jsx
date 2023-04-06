@@ -35,12 +35,12 @@ const MoreInfo = () => {
           <img src={Godwin} width = {400} height= {300} alt="" /> 
           </div>
         <div>
-          <h1 className=' mt-5 sm:text-[1.875rem] text-[1.5rem] text-center font-900'>Meet The Founder</h1>
-          <p className='text-sm  text-center leading-7 font-bold mt-6'>Mr. Oluwole Godwin, who brings a wealth of knowledge and experience to our Economics class is a graduate of the prestigious University of Ibadan, where he studied Economics and graduated with honors. Mr. Godwin is a skilled and engaging teacher who uses a variety of teaching methods to ensure that his students understand the material. He is dedicated to his students and goes above and beyond to help them succeed.
+          <h1 className='font-bold mt-5 sm:text-[1.875rem] text-[1.5rem] text-center font-900'>Meet The Founder</h1>
+          <p className='text-sm text-justify   leading-7 font-bold mt-6'>Mr. Oluwole Godwin, who brings a wealth of knowledge and experience to our Economics class is a graduate of the prestigious University of Ibadan, where he studied Economics and graduated with honors. Mr. Godwin is a skilled and engaging teacher who uses a variety of teaching methods to ensure that his students understand the material. He is dedicated to his students and goes above and beyond to help them succeed.
 
 
           </p>
-          <p className='text-sm  text-center leading-7 font-bold font-bold mt-6'>We are proud to have Mr. Godwin as our head tutor, and we are confident that his expertise and dedication will help our students achieve their goals and succeed in their Economics studies.
+          <p className='text-sm text-justify  leading-7 font-bold font-bold mt-6'>We are proud to have Mr. Godwin as our head tutor, and we are confident that his expertise and dedication will help our students achieve their goals and succeed in their Economics studies.
           </p>
         </div>
       </div>
