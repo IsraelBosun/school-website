@@ -5,7 +5,7 @@ import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine, RiSearch2Line } from "re
 import { courses } from "./Data";
 import Header from "../src/components/container/Header"
 import About from "./assets/About.jpeg"
-
+import {Link} from "react-router-dom"
 
 
 const CoursesS = () => {
@@ -171,7 +171,11 @@ const CoursesS = () => {
         <div className='section grid md:grid-cols-3 sm:grid-cols-2  gap-8'>
         {
             course.map((course) => {
-                return <CoursesBody className = "hidden" key={course.id} {...course} />
+                return (
+                    <Link to = {`courses/${course.id}`} key={course.id}>
+                <CoursesBody className = "hidden"  {...course} />
+                    </Link>
+                )
             })
         }
         </div>

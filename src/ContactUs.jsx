@@ -3,6 +3,10 @@ import { AiOutlineWhatsApp, AiOutlineMail, AiFillYoutube, AiFillFacebook, AiOutl
 import { GoLocation } from "react-icons/go"
 
 const ContactUs = () => {
+
+  const handleClick = (e) => {
+    e.preventDefault()
+  }
   return (
     <>
         <section className='section gap-9 grid md:grid-cols-2 sm:grid-cols-1'>
@@ -21,9 +25,9 @@ const ContactUs = () => {
                      +234 950 949 333
                 </a>
                 <div className='flex items-center pl-2  gap-3 bg-Teal py-4  rounded-xl text-white fit-content '>
-                    <a target='_blank' href="mailto:mogschoolofeconomics@gmail.com" className='flex justify-center gap-3'>
-                    <AiOutlineMail className='text-white text-3xl' />
-                    mogschoolofeconomics@gmail.com
+                    <a target='_blank' href="mailto:mogschoolofeconomics@gmail.com" className='flex justify-center  gap-3'>
+                    <AiOutlineMail className='text-white  text-3xl' />
+                    mogecons@gmail.com 
                     </a>
                 </div>
                 <div className='flex items-center gap-3 py-4  font-bold'>
@@ -51,7 +55,7 @@ const ContactUs = () => {
       </div>
       <label htmlFor="message" className="block mb-2 font-semibold">Message</label>
       <textarea id="message" name="message" rows="4" className="w-full px-4 py-2 mb-4 border rounded border-Teal outline-Teal" placeholder='Write to us' />
-      <button type="submit" className=" bg-Teal text-white  px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+      <button onClick={handleClick} type="submit" className=" bg-Teal text-white  px-4 py-2 rounded hover:bg-blue-600">Submit</button>
     </form>
 
            </div>
