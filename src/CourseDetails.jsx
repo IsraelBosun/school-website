@@ -11,6 +11,7 @@ const CourseDetails = () => {
     })
   return (
     <div className='h-50 bg-red-500'>{courses.second}</div>
+    
   )
 }
 

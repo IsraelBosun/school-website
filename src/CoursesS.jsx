@@ -173,7 +173,7 @@ const CoursesS = () => {
             course.map((course) => {
                 return (
                     <Link to = {`courses/${course.id}`} key={course.id}>
-                <CoursesBody className = "hidden"  {...course} />
+                <CoursesBody className = ""  {...course} />
                     </Link>
                 )
             })
