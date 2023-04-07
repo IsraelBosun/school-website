@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
           <button className="relative py-3 px-6 font-bold text-Teal text-3xl">
             <AiOutlineShoppingCart />
-            <div className="absolute top-1 right-5 w-4  p-[2px]  text-xs bg-red-700 text-white  rounded-[100%]">1</div>
+            <div className="absolute top-1 right-5 w-5  h-5 rounded-full  text-sm bg-red-700 text-white flex  justify-center">1</div>
           </button>
           {toggle && (
             <motion.div
