@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState(null);
+  const [toggler, settoggler] = useState(false)
   useEffect(() => {
     const scrollActive = () => {
       setActive(window.scrollY > 20);
@@ -49,7 +50,9 @@ const Navbar = () => {
             })}
           </div>
           <button className="relative py-3 px-6 font-bold text-Teal text-3xl">
-            <AiOutlineShoppingCart />
+            <AiOutlineShoppingCart 
+            onClick={() => settoggler(true)}
+            />
             <div className="absolute top-0 right-4 w-4  h-4 rounded-full  text-xs bg-red-700 text-white ">1</div>
           </button>
           {toggle && (
@@ -71,6 +74,22 @@ const Navbar = () => {
               <HiX
                 className="absolute right-12 top-12 text-3xl cursor-pointer"
                 onClick={(prev) => setToggle(!prev)}
+              />
+            </motion.div>
+          )}
+           {toggler && (
+            <motion.div
+              initial={{ y: -500, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className="fixed h-full w-96 top-0 right-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8"
+            >
+
+                CHILL, WE'RE STILL <br /> UNDER CONSTRUCTION
+
+              <HiX
+                className="absolute left-12 top-12 text-3xl cursor-pointer"
+                onClick={(prev) => settoggler(!prev)}
               />
             </motion.div>
           )}
