@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import MobileNavLinks from "./MobileNavLinks";
@@ -7,11 +7,17 @@ import { Link } from "react-router-dom"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { motion } from "framer-motion";
 
+import { counter } from "../container/Counter"
+import { useSelector, useDispatch } from 'react-redux'
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  // const {  totalQuantities } = useSelector((state) => state.cart);
+  // const showCart = useSelector((state) => state.cart.showCart);
+  const { totalQuantities, showCart } = useSelector((state) => state.cart);
+
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState(null);
-  const [toggler, settoggler] = useState(false)
   useEffect(() => {
     const scrollActive = () => {
       setActive(window.scrollY > 20);
@@ -51,9 +57,9 @@ const Navbar = () => {
           </div>
           <button className="relative py-3 px-6 font-bold text-Teal text-3xl">
             <AiOutlineShoppingCart 
-            onClick={() => settoggler(true)}
+            onClick={() => dispatch(counter.actions.setShowCart(true))}
             />
-            <div className="absolute top-0 right-4 w-4  h-4 rounded-full  text-xs bg-red-700 text-white ">1</div>
+            <div className="absolute top-0 right-4 w-4  h-4 rounded-full  text-xs bg-red-700 text-white ">{totalQuantities}</div>
           </button>
           {toggle && (
             <motion.div
@@ -77,7 +83,7 @@ const Navbar = () => {
               />
             </motion.div>
           )}
-           {toggler && (
+           {showCart && (
             <motion.div
               initial={{ y: -500, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -89,7 +95,7 @@ const Navbar = () => {
 
               <HiX
                 className="absolute left-12 top-12 text-3xl cursor-pointer"
-                onClick={(prev) => settoggler(!prev)}
+                onClick={() => dispatch(counter.actions.setShowCart(!showCart))}
               />
             </motion.div>
           )}
