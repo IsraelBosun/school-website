@@ -41,9 +41,9 @@ const Cart = () => {
               <div>{item.title}</div>
               <div className='font-bold'>{item.Level}L</div>
             </div>
-            <div className='font-bold flex flex-col items-center gap-4'>
+            <div className='font-bold flex flex-col items-center gap-9'>
               <div>{item.price}</div>
-              <TiDeleteOutline className='text-Teal' onClick={() => onRemove(item)} />
+              <TiDeleteOutline className='text-xl text-Teal' onClick={() => onRemove(item)} />
             </div>
           </div>
         ))}
