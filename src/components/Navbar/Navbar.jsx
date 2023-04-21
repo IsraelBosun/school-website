@@ -6,15 +6,12 @@ import NavLink from "./NavLink";
 import { Link } from "react-router-dom"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { motion } from "framer-motion";
+import Cart from "../container/Cart"
 
-import { counter } from "../container/Counter"
-import { useSelector, useDispatch } from 'react-redux'
+import {Context} from "../container/StateContext"
 
 const Navbar = () => {
-  const dispatch = useDispatch();
-  // const {  totalQuantities } = useSelector((state) => state.cart);
-  // const showCart = useSelector((state) => state.cart.showCart);
-  const { totalQuantities, showCart } = useSelector((state) => state.cart);
+  const { totalQuantities, showCart, setShowCart } = useContext(Context)
 
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState(null);
@@ -57,7 +54,7 @@ const Navbar = () => {
           </div>
           <button className="relative py-3 px-6 font-bold text-Teal text-3xl">
             <AiOutlineShoppingCart 
-            onClick={() => dispatch(counter.actions.setShowCart(true))}
+            onClick={() => setShowCart(true)}
             />
             <div className="absolute top-0 right-4 w-4  h-4 rounded-full  text-xs bg-red-700 text-white ">{totalQuantities}</div>
           </button>
@@ -88,15 +85,15 @@ const Navbar = () => {
               initial={{ y: -500, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="fixed h-full w-96 top-0 right-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8"
+              className="fixed h-full w-96 top-0 right-0 z-20 bg-Solitude   shadow-lg  p-6"
             >
 
-                CHILL, WE'RE STILL <br /> UNDER CONSTRUCTION
+                {showCart && <Cart />}
 
-              <HiX
+              {/* <HiX
                 className="absolute left-12 top-12 text-3xl cursor-pointer"
-                onClick={() => dispatch(counter.actions.setShowCart(!showCart))}
-              />
+                onClick={() => setShowCart(!showCart)}
+              /> */}
             </motion.div>
           )}
         </div>

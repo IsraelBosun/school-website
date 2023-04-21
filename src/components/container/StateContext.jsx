@@ -76,8 +76,6 @@ console.log(totalQuantities)
       totalPrice,
       totalQuantities,
       qty,
-      incQty,
-      decQty,
       onAdd,
       toggleCartItemQuantity,
       onRemove,
