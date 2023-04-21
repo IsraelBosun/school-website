@@ -85,7 +85,7 @@ const Navbar = () => {
               initial={{ y: -500, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="fixed h-full w-96 top-0 right-0 z-20 bg-Solitude   shadow-lg  p-6"
+              className="fixed h-full w-96 top-0 right-0 z-20 bg-Solitude   shadow-lg  p-9"
             >
 
                 {showCart && <Cart />}

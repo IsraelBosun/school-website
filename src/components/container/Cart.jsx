@@ -12,7 +12,7 @@ const Cart = () => {
     const { totalPrice, totalQuantities, cartItems, setShowCart, onRemove } = useContext(Context);
     
   return (
-    <div className='text-red-500' ref={cartRef}>
+    <div className='' ref={cartRef}>
       <div className='font-bold flex items-center gap-5' onClick = {() => setShowCart(false)}>
         <HiX />
         <div>Your Cart</div>
@@ -47,7 +47,6 @@ const Cart = () => {
             </div>
           </div>
         ))}
-        <div>{totalPrice}</div>
       </div>
     </div>
   )
