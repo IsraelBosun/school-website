@@ -23,7 +23,7 @@ const Cart = () => {
         cartItems.length < 1 && (
           <div className=' mt-4 flex flex-col items-center gap-4'>
             <AiOutlineShopping size = {60} />
-            <h3>Your Shopping bag is empty</h3>
+            <h3>Your Shopping Cart Is Empty</h3>
             <Link href = "/">
               <button type = "button" className='px-6 py-3 font-bold text-white bg-Teal rounded-xl mr-4 text-sm hover:text-Teal hover:bg-white border hover:border-Teal' onClick = {() => setShowCart(false)}>
                 Continue Shopping
@@ -37,13 +37,13 @@ const Cart = () => {
         {cartItems.length >= 1 && cartItems.map((item) => (
           <div className='flex items-center gap-4 ' key={item._id}>
             <img className='w-1/3 rounded-lg' src={item?.image} alt="" />
-            <div className='flex flex-col gap-1'>
+            <div className=' flex flex-col gap-1'>
               <div>{item.title}</div>
-              <div>{item.Level}L</div>
+              <div className='font-bold'>{item.Level}L</div>
             </div>
-            <div className='flex flex-col items-center gap-4'>
+            <div className='font-bold flex flex-col items-center gap-4'>
               <div>{item.price}</div>
-              <TiDeleteOutline onClick={() => onRemove(item)} />
+              <TiDeleteOutline className='text-Teal' onClick={() => onRemove(item)} />
             </div>
           </div>
         ))}
