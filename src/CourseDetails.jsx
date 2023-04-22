@@ -27,7 +27,7 @@ const CourseDetails = () => {
     console.log(coursesT)
 
     const handleBuyNow = () => {
-      onAdd(coursesT);
+      onAdd(coursesT, qty);
 
       setShowCart(true)
     }
@@ -36,7 +36,6 @@ const CourseDetails = () => {
       onAdd(coursesT, qty)
       if (!clicked) {
         setClicked(true);
-        onClick();
       }
     }
 
@@ -54,7 +53,7 @@ const CourseDetails = () => {
       <div className='font-bold text-Teal'>{Level}L</div>
       <div className='mt-4 font-bold text-Teal'>Details</div>
       <div className=''>{details}</div>
-      <div className='mt-3 text-3xl font-bold text-Teal'>{price}</div>
+      <div className='mt-3 text-3xl font-bold text-Teal'>#{price}</div>
       <div className='mt-4'>
       <button onClick={handleClick} disabled = {clicked} className='px-6 py-3 font-bold text-white bg-Teal rounded-lg mr-4 text-sm hover:text-Teal hover:bg-white border hover:border-Teal'>Add to Cart</button>
       <button onClick={handleBuyNow} className=' py-3 px-6 text-sm border border-solid border-gray rounded-lg font-bold hover:bg-Teal hover:text-white hover:border-none'>Buy Now</button>

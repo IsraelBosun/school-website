@@ -25,7 +25,7 @@ const CoursesBody = ({image, category, title, participants, rating, price, Level
                 </div>
             </div>
             <div className='text-sm font-bold'>
-                {price}
+                #{price}
             </div>
         </div>
         <div className='flex items-center mt-6 justify-center'>

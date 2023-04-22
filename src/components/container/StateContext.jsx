@@ -15,14 +15,14 @@ console.log(totalQuantities)
 
   // to add to cart
   const onAdd = (product, quantity) => {
-    const checkProductInCart = cartItems.find((item) => item._id === product._id)
+    const checkProductInCart = cartItems.find((item) => item.id === product.id)
 
     settotalPrice((prevTotalPrice) => prevTotalPrice + product.price * quantity);
     settotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity)
 
     if(checkProductInCart) {
       const updateCartItems = cartItems.map((cartProduct) => {
-        if(cartProduct._id === product._id)
+        if(cartProduct.id === product.id)
         return {
           ...cartProduct, quantity:cartProduct.quantity + quantity
         }
@@ -37,8 +37,8 @@ console.log(totalQuantities)
 
   // to remove items from cart
   const onRemove = (product) => {
-    foundProduct = cartItems.find((item) => item._id === product._id)
-    const newCartItems2 = cartItems.filter((item) => item._id !== product._id);
+    foundProduct = cartItems.find((item) => item.id === product.id)
+    const newCartItems2 = cartItems.filter((item) => item.id !== product.id);
 
     settotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price * foundProduct.quantity);
     settotalQuantities(prevTotalQuantities => prevTotalQuantities -foundProduct.quantity);

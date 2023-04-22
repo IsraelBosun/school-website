@@ -206,7 +206,7 @@ export const courses = [
    title: "Microeconomics for beginners",
    rating: 4.9,
    participants: 500,
-   price: "#1000",
+   price: 1000,
    Level: 100,
    details: "This course introduces the basic principles of microeconomics through lectures, case studies, and problem sets. Students will learn about topics such as supply and demand, consumer behavior, and market structures."
  },
@@ -217,7 +217,7 @@ export const courses = [
    title: "Mathematical Economics for beginners",
    rating: 4.8,
    participants: 700,
-   price: "#1200",
+   price: 1200,
    Level: 100,
    details: "This course will cover the fundamental concepts of macroeconomics, including national income, inflation, and unemployment. Students will also learn how to use mathematical models to analyze economic phenomena."
  },
@@ -228,7 +228,7 @@ export const courses = [
    title: "Macroeconomics for beginners",
    rating: 4.9,
    participants: 300,
-   price: "#9900",
+   price: 9900,
    Level: 100,
    details: "This course is an introduction to macroeconomic theory and policy. Students will study topics such as economic growth, monetary policy, and fiscal policy, and will learn how to evaluate macroeconomic policies using data and statistical techniques."
  },
@@ -239,7 +239,7 @@ export const courses = [
    title: "The Nigerian Economy",
    rating: 4.7,
    participants: 600,
-   price: "#8500",
+   price: 8500,
    Level: 100,
    details: "This course provides an overview of the Nigerian economy, including its history, current state, and future prospects. Students will learn about the factors that drive economic growth and development in Nigeria, and will analyze the country's economic policies and institutions."
  },
@@ -250,7 +250,7 @@ export const courses = [
    title: "Intermediate Microeconomics I",
    rating: 4.9,
    participants: 500,
-   price: "#1050",
+   price: 1050,
    Level: 200,
    details: "This course builds on the principles of microeconomics introduced in the introductory course. Students will study more advanced topics such as game theory, externalities, and public goods, and will learn how to apply microeconomic models to real-world problems."
  },
@@ -261,7 +261,7 @@ export const courses = [
    title: "Intermediate Mathematical Economics I",
    rating: 4.9,
    participants: 500,
-   price: "#1050",
+   price: 1050,
    Level: 300,
    details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
  },
@@ -272,7 +272,7 @@ export const courses = [
   title: "Macroeconomics for beginners",
   rating: 4.9,
   participants: 300,
-  price: "#9900",
+  price: 9900,
   Level: 100,
   details: "This course builds on the concepts introduced in the introductory macroeconomics course, and will cover topics such as economic fluctuations, international trade, monetary and fiscal policies, and the role of central banks in the economy. Students will learn how to analyze macroeconomic data and use basic models to understand the behavior of key macroeconomic variables. The course will also discuss current macroeconomic issues and debates, such as inflation, unemployment, and the effectiveness of government interventions."
 },
@@ -283,7 +283,7 @@ export const courses = [
   title: "Economic Development",
   rating: 4.9,
   participants: 500,
-  price: "#1050",
+  price: 1050,
   Level: 200,
   details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
 }
