@@ -63,7 +63,7 @@ const Navbar = () => {
               initial={{ x: -500, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8"
+              className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center border border-red-500 items-center shadow-lg gap-8 py-8"
             >
               {navLinks.map((navLink) => {
                 return (
@@ -85,7 +85,7 @@ const Navbar = () => {
               initial={{ y: -500, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="fixed h-full w-96 h-screen overflow-y-scroll top-0 right-0 z-20 bg-Solitude   shadow-lg  p-9"
+              className="fixed h-full w-96 h-screen overflow-y-scroll top-0 right-0 z-20 bg-Solitude   shadow-lg  p-12"
             >
 
                 {showCart && <Cart />}

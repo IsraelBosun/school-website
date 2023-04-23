@@ -14,7 +14,7 @@ const Cart = () => {
   return (
     <div className='' ref={cartRef}>
       <div className='font-bold flex items-center gap-5' onClick = {() => setShowCart(false)}>
-        <HiX />
+        <HiX className = "text-xl text-Teal" />
         <div>Your Cart</div>
         <div className='text-Teal'>({totalQuantities} items)</div>
       </div>
@@ -53,9 +53,9 @@ const Cart = () => {
         <div className=''>
           <div className='text-sm my-2 text-center capitalize'>Fill the form below to complete payment</div>
           <form className='flex flex-col gap-4' action="">
-          <input className='border-2 focus:border-Teal border-Teal bg-solitude rounded-md p-3' type="text" placeholder='Name' />
-          <input className='border-2 focus:border-Teal border-Teal bg-solitude rounded-md p-3' type="text" placeholder='Phone' />
-          <input className='border-2 focus:border-Teal border-Teal bg-solitude rounded-md p-3' type="text" placeholder='E-mail' />
+          <input className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='Name' />
+          <input className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='Phone' />
+          <input className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='E-mail' />
         </form>
       </div>
       )}
@@ -66,7 +66,7 @@ const Cart = () => {
             <h3 className='text-2xl'>Total:</h3>
             <h3 className='text-2xl font-bold'>#{totalPrice}</h3>
           </div>
-          <button className=' px-6 py-3 font-bold text-white bg-Teal rounded-xl mr-4 text-xl hover:text-Teal hover:bg-white border hover:border-Teal'>Pay With Paystack</button>
+          <button className='mb-5 px-6 py-3 font-bold text-white bg-Teal rounded-xl mr-4 text-xl hover:text-Teal hover:bg-white border hover:border-Teal'>Pay With Paystack</button>
         </div>
       )}
     </div>
