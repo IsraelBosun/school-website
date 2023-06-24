@@ -3,9 +3,11 @@ import { Menu } from "@headlessui/react"
 import CoursesBody from './components/container/CoursesBody';
 import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine, RiSearch2Line } from "react-icons/ri";
 import { courses } from "./Data";
-import Header from "../src/components/container/Header"
-import About from "./assets/About.jpeg"
-import {Link} from "react-router-dom"
+import Header from "../src/components/container/Header";
+import About from "./assets/About.jpeg";
+import {Link} from "react-router-dom";
+import { Tab } from '@headlessui/react'
+import { coursess } from './Data';
 
 
 const CoursesS = () => {
@@ -52,7 +54,7 @@ const CoursesS = () => {
             //     return leveli.Level === level;
             // }
 
-        // })
+        // }) 
         const isDefault = (str) => {
             return str.split(' ').includes('Level')
         }
@@ -180,6 +182,28 @@ const CoursesS = () => {
         }
         </div>
     </div>
+
+{/* <Tab.Group >
+        <Tab.List className="flex shadow-lg gap-2 space-x-1 rounded-xl bg-blue-900/20 p-1">
+          {Object.keys(coursess).map((category) => (
+            <Tab
+              key={category}
+              className={({ selected }) =>
+                className(
+                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none  focus:ring-2',
+                  selected
+                    ? 'bg-white shadow'
+                    : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                )
+              }
+            >
+              {category}
+            </Tab>
+          ))}
+        </Tab.List>
+
+      </Tab.Group> */}
     </div>
   )
 }

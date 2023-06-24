@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsFacebook, BsInstagram, BsTwitter, BsPinterest } from "react-icons/bs"
+import {Link} from "react-router-dom"
 import { motion } from "framer-motion"
 
 const Footer = () => {
@@ -44,7 +45,7 @@ const Footer = () => {
             <a href="" className='hover:scale-110 text-xl'><BsFacebook /></a>
             <a href="" className='hover:scale-110 text-xl'><BsInstagram /></a>
             <a href="" className='hover:scale-110 text-xl'><BsTwitter /></a>
-            <a href="" className='hover:scale-110 text-xl'><BsPinterest /></a>
+            <Link to="testing" className='hover:scale-110 text-xl'><BsPinterest /></Link>
           </div>
         </div>
       </div>

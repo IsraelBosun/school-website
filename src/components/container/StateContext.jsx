@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState} from 'react'
 import { toast } from "react-hot-toast"
+// import { validateEmail } from '../../Data';
 
 export const Context = createContext();
 
@@ -9,6 +10,12 @@ export const Context = createContext();
   const [totalPrice, settotalPrice] = useState(0);
   const [totalQuantities, settotalQuantities] = useState(0)
   const [qty, setqty] = useState(1);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [error, setError] = useState("")
+
 console.log(totalQuantities)
   let foundProduct;
   let index;
@@ -67,6 +74,41 @@ console.log(totalQuantities)
     }
 }
 
+
+
+ const validateEmail = (email) => {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+};
+
+  // to validate form
+  const getIsFormValid = () => {
+    return (
+      firstName && validateEmail(email)  
+    )
+  }
+
+  // to clear form
+  const clearForm = () => {
+    setFirstName("")
+    setLastName("")
+    setEmail("")
+    setPhoneNumber()
+  }
+
+  // to submit 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Will Pay Now");
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (email && !emailRegex.test(email)){
+      setError("Email must follow the correct format")
+    } else {
+      alert("form submitted with email", email)
+    }
+    clearForm();
+  }
+
   return (
     <Context.Provider
     value = {{
@@ -81,7 +123,20 @@ console.log(totalQuantities)
       onRemove,
       setcartItems,
       settotalPrice,
-      settotalQuantities
+      settotalQuantities,
+      getIsFormValid,
+      clearForm,
+      handleSubmit,
+      firstName,
+      setFirstName,
+      lastName,
+      setLastName,
+      email,
+      setEmail,
+      phoneNumber, 
+      setPhoneNumber,
+      error,
+      setError
     }}
     >
       {children}

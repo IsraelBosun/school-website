@@ -8,8 +8,12 @@ import toast from "react-hot-toast"
 import { Context } from "./StateContext"
 
 const Cart = () => {
+
+  
+
+
     const cartRef = useRef()
-    const { totalPrice, totalQuantities, cartItems, setShowCart, onRemove } = useContext(Context);
+    const { totalPrice, totalQuantities, cartItems, setShowCart, onRemove, getIsFormValid, clearForm, handleSubmit, firstName, setFirstName, lastName, setLastName, email, setEmail, phoneNumber, setPhoneNumber, error, setError } = useContext(Context);
     console.log(cartItems)
   return (
     <div className='' ref={cartRef}>
@@ -50,25 +54,41 @@ const Cart = () => {
       </div>
 
       {cartItems.length >= 1 && (
-        <div className=''>
-          <div className='text-sm my-2 text-center capitalize'>Fill the form below to complete payment</div>
-          <form className='flex flex-col gap-4' action="">
-          <input className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='Name' />
-          <input className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='Phone' />
-          <input className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='E-mail' />
-        </form>
-      </div>
-      )}
+          <div>
+            <div className='text-sm my-2 text-center capitalize'>Fill the form below to complete payment</div>
+            <form className='flex flex-col gap-4' onSubmit = {handleSubmit}>
+              <fieldset >
+                <div>
+                  <label htmlFor="">First Name</label>
+                  <input value={firstName} onChange = {(e) => {setFirstName(e.target.value);}} className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='First Name' />
+                </div>
+                <div>
+                  <label htmlFor="">Last Name</label>
+                  <input value={lastName} onChange={(e) => {setLastName(e.target.value);}} className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='Last Name' />
+                </div>
+                <div>
+                  <label htmlFor="">Phone Number</label>
+                  <input className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='Phone' />
+                </div>
+                <div>
+                  <label htmlFor="">E-mail Address</label>
+                  <input value={email} onChange={handleEmailChange} className='border-2 focus:border-Teal border-Teal outline-Teal bg-solitude rounded-md p-3' type="text" placeholder='E-mail' />
+                  <p>{setError}</p>
+                  {error && <p>{error}</p>}
+                </div>
 
-      {cartItems.length >= 1 && (
-        <div className='mt-8 flex flex-col items-center gap-3'>
-          <div className='flex gap-2'>
-            <h3 className='text-2xl'>Total:</h3>
-            <h3 className='text-2xl font-bold'>#{totalPrice}</h3>
+                <div className='mt-8 flex flex-col items-center gap-3'>
+              <div className='flex gap-2'>
+                <h3 className='text-2xl'>Total:</h3>
+                <h3 className='text-2xl font-bold'>#{totalPrice}</h3>
+              </div>
+              <button type='submit' disabled ={!getIsFormValid()} className='mb-5 px-6 py-3 font-bold text-white bg-Teal rounded-xl mr-4 text-xl hover:text-Teal hover:bg-white border hover:border-Teal'>Pay With Paystack</button>
+            </div>
+              </fieldset>
+            </form>
           </div>
-          <button className='mb-5 px-6 py-3 font-bold text-white bg-Teal rounded-xl mr-4 text-xl hover:text-Teal hover:bg-white border hover:border-Teal'>Pay With Paystack</button>
-        </div>
-      )}
+                )}
+
     </div>
   )
 }

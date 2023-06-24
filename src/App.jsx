@@ -6,6 +6,7 @@ import Tutors from "./Tutors"
 import ContactUs from "./ContactUs";
 import CourseDetails from "./CourseDetails";
 import { MoreInfo, Navbar, Footer } from "./components";
+import Testing from "./Registration";
 
 function App () {
   return (
@@ -19,7 +20,7 @@ function App () {
       <Route path = "tutors" element = {<Tutors/>} />
       <Route path = "contactus" element = {<ContactUs/>} />
       <Route path = "/courses/:id" element = {<CourseDetails  />} />
-      
+      <Route path = "registration" element = {<Testing/>} />
     </Routes>
     <Footer />
   </BrowserRouter>

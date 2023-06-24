@@ -40,6 +40,11 @@ export const navLinks = [
     link: "About",
   },
   {
+    id: 2,
+    href: "registration",
+    link: "Registration",
+  },
+  {
     id: 3,
     href: "/courses",
     link: "Courses",
@@ -115,90 +120,91 @@ export const subjects = [
   },
 ]
 
-// export const courses = [
-//    {
-//     id: 1,
-//     image: courses1,
-//     category: "Microeconomics",
-//     title: "Microeconomics for beginners",
-//     rating: 4.9,
-//     participants: 500,
-//     price: "#1000",
-//     Level: 100,
-//   },
-//   {
-//     id: 2,
-//     image: courses2,
-//     category: "Macroeconomics",
-//     title: "Mathematical Economics for beginners",
-//     rating: 4.8,
-//     participants: 700,
-//     price: "#1200",
-//     Level: 100,
-//   },
-//   {
-//     id: 3,
-//     image: courses3,
-//     category: "Finance",
-//     title: "Macroeconomics for beginners",
-//     rating: 4.9,
-//     participants: 300,
-//     price: "#9900",
-//     Level: 100,
-//   },
-//   {
-//     id: 4,
-//     image: courses4,
-//     category: "Quantitative Economics",
-//     title: "The Nigerian Economy",
-//     rating: 4.7,
-//     participants: 600,
-//     price: "#8500",
-//     Level: 100,
-//   },
-//   {
-//     id: 5,
-//     image: courses5,
-//     category: "International Economics",
-//     title: "Intermediate Microeconomics I",
-//     rating: 4.9,
-//     participants: 500,
-//     price: "#1050",
-//     Level: 200,
-//   },
-//   {
-//     id: 6,
-//     image: courses6,
-//     category: "History Of Economics",
-//     title: "Intermediate Mathematical Economics I",
-//     rating: 4.9,
-//     participants: 500,
-//     price: "#1050",
-//     Level: 300,
-//   },
-//   {
-//     id: 7,
-//     image: courses7,
-//     category: "Applied Microeconomics",
-//     title: "Intermediate Macroeconomics I",
-//     rating: 4.9,
-//     participants: 500,
-//     price: "#1050",
-//     Level: 300,
-//   },
-//   {
-//     id: 8,
-//     image: courses8,
-//     category: "Quantitative Economics",
-//     title: "Economic Development",
-//     rating: 4.9,
-//     participants: 500,
-//     price: "#1050",
-//     Level: 200,
-//   },
-// ];
-
 export const courses = [
+   {
+    id: 1,
+    image: courses1,
+    category: "Microeconomics",
+    title: "Microeconomics for beginners",
+    rating: 4.9,
+    participants: 500,
+    price: "#1000",
+    Level: 100,
+  },
+  {
+    id: 2,
+    image: courses2,
+    category: "Macroeconomics",
+    title: "Mathematical Economics for beginners",
+    rating: 4.8,
+    participants: 700,
+    price: "#1200",
+    Level: 100,
+  },
+  {
+    id: 3,
+    image: courses3,
+    category: "Finance",
+    title: "Macroeconomics for beginners",
+    rating: 4.9,
+    participants: 300,
+    price: "#9900",
+    Level: 100,
+  },
+  {
+    id: 4,
+    image: courses4,
+    category: "Quantitative Economics",
+    title: "The Nigerian Economy",
+    rating: 4.7,
+    participants: 600,
+    price: "#8500",
+    Level: 100,
+  },
+  {
+    id: 5,
+    image: courses5,
+    category: "International Economics",
+    title: "Intermediate Microeconomics I",
+    rating: 4.9,
+    participants: 500,
+    price: "#1050",
+    Level: 200,
+  },
+  {
+    id: 6,
+    image: courses6,
+    category: "History Of Economics",
+    title: "Intermediate Mathematical Economics I",
+    rating: 4.9,
+    participants: 500,
+    price: "#1050",
+    Level: 300,
+  },
+  {
+    id: 7,
+    image: courses7,
+    category: "Applied Microeconomics",
+    title: "Intermediate Macroeconomics I",
+    rating: 4.9,
+    participants: 500,
+    price: "#1050",
+    Level: 300,
+  },
+  {
+    id: 8,
+    image: courses8,
+    category: "Quantitative Economics",
+    title: "Economic Development",
+    rating: 4.9,
+    participants: 500,
+    price: "#1050",
+    Level: 200,
+  },
+];
+
+export const coursess = {
+  All: [
   {
    id: 1,
    image: courses1,
@@ -287,8 +293,129 @@ export const courses = [
   Level: 200,
   details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
 }
+],
 
-]
+"100L": [
+  {
+    id: 1,
+    image: courses1,
+    category: "Microeconomics",
+    title: "Microeconomics for beginners",
+    rating: 4.9,
+    participants: 500,
+    price: 1000,
+    Level: 100,
+    details: "This course introduces the basic principles of microeconomics through lectures, case studies, and problem sets. Students will learn about topics such as supply and demand, consumer behavior, and market structures."
+  },
+  {
+    id: 2,
+    image: courses2,
+    category: "Macroeconomics",
+    title: "Mathematical Economics for beginners",
+    rating: 4.8,
+    participants: 700,
+    price: 1200,
+    Level: 100,
+    details: "This course will cover the fundamental concepts of macroeconomics, including national income, inflation, and unemployment. Students will also learn how to use mathematical models to analyze economic phenomena."
+  },
+  {
+    id: 3,
+    image: courses3,
+    category: "Finance",
+    title: "Macroeconomics for beginners",
+    rating: 4.9,
+    participants: 300,
+    price: 9900,
+    Level: 100,
+    details: "This course is an introduction to macroeconomic theory and policy. Students will study topics such as economic growth, monetary policy, and fiscal policy, and will learn how to evaluate macroeconomic policies using data and statistical techniques."
+  },
+  {
+    id: 4,
+    image: courses4,
+    category: "Quantitative Economics",
+    title: "The Nigerian Economy",
+    rating: 4.7,
+    participants: 600,
+    price: 8500,
+    Level: 100,
+    details: "This course provides an overview of the Nigerian economy, including its history, current state, and future prospects. Students will learn about the factors that drive economic growth and development in Nigeria, and will analyze the country's economic policies and institutions."
+  },
+],
+
+
+"200L": [
+  {
+    id: 6,
+    image: courses6,
+    category: "History Of Economics",
+    title: "Intermediate Mathematical Economics I",
+    rating: 4.9,
+    participants: 500,
+    price: 1050,
+    Level: 300,
+    details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
+  },
+  {
+   id: 3,
+   image: courses3,
+   category: "Finance",
+   title: "Macroeconomics for beginners",
+   rating: 4.9,
+   participants: 300,
+   price: 9900,
+   Level: 100,
+   details: "This course builds on the concepts introduced in the introductory macroeconomics course, and will cover topics such as economic fluctuations, international trade, monetary and fiscal policies, and the role of central banks in the economy. Students will learn how to analyze macroeconomic data and use basic models to understand the behavior of key macroeconomic variables. The course will also discuss current macroeconomic issues and debates, such as inflation, unemployment, and the effectiveness of government interventions."
+ },
+  {
+   id: 8,
+   image: courses8,
+   category: "Quantitative Economics",
+   title: "Economic Development",
+   rating: 4.9,
+   participants: 500,
+   price: 1050,
+   Level: 200,
+   details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
+ },
+
+
+],
+ "300L": [
+  {
+    id: 6,
+    image: courses6,
+    category: "History Of Economics",
+    title: "Intermediate Mathematical Economics I",
+    rating: 4.9,
+    participants: 500,
+    price: 1050,
+    Level: 300,
+    details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
+  },
+  {
+   id: 3,
+   image: courses3,
+   category: "Finance",
+   title: "Macroeconomics for beginners",
+   rating: 4.9,
+   participants: 300,
+   price: 9900,
+   Level: 100,
+   details: "This course builds on the concepts introduced in the introductory macroeconomics course, and will cover topics such as economic fluctuations, international trade, monetary and fiscal policies, and the role of central banks in the economy. Students will learn how to analyze macroeconomic data and use basic models to understand the behavior of key macroeconomic variables. The course will also discuss current macroeconomic issues and debates, such as inflation, unemployment, and the effectiveness of government interventions."
+ },
+  {
+   id: 8,
+   image: courses8,
+   category: "Quantitative Economics",
+   title: "Economic Development",
+   rating: 4.9,
+   participants: 500,
+   price: 1050,
+   Level: 200,
+   details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
+ }
+ ]
+}
 
 
 export const logos = [logo1, logo2, logo3, logo4, logo5, logo6];
@@ -403,3 +530,8 @@ export const tutors = [
   }
   ]
 
+  export const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+  
