@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.4",
     "@headlessui/react": "^1.7.13",
     "@reduxjs/toolkit": "^1.9.3",
     "framer-motion": "^9.0.2",

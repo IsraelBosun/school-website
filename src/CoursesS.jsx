@@ -197,7 +197,7 @@ const CoursesS = () => {
                                             animate={{ y: 0 }}
                                             transition={{ duration: 0.5 }}
                                             key={post.id}
-                                            className="rounded-xl mt-6 p-2 bg-gradient shadow-2xl bg-white rounded-md"
+                                            className="rounded-xl mt-6   shadow-2xl  rounded-md"
                                         >
                                             <div key={course.id}>
                                                 <CoursesBody className=""  {...post} />

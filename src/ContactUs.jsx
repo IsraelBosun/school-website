@@ -1,8 +1,13 @@
 import React from 'react'
 import { AiOutlineWhatsApp, AiOutlineMail, AiFillYoutube, AiFillFacebook, AiOutlineTwitter  } from "react-icons/ai"
 import { GoLocation } from "react-icons/go"
+import { useForm, ValidationError } from '@formspree/react';
+
 
 const ContactUs = () => {
+
+  const [state, handleSubmit] = useForm("moqzowkz");
+
 
   const handleClick = (e) => {
     e.preventDefault()
@@ -18,16 +23,17 @@ const ContactUs = () => {
                 <p>Simply fill out the form and we will be in touch?</p>
             </div>
             <div className='flex flex-col  gap-2'>
-                <a className='flex gap-3 items-center' target='_blank' href="https://wa.me/+234950949333">
+                <a className='flex gap-3 items-center' target='_blank' href="https://wa.me/+2348127728361">
                 <div className='flex items-center gap-3 py-4  font-bold'>
                     <AiOutlineWhatsApp className='text-Teal text-3xl' />
                 </div>    
-                     +234 950 949 333
+                     +234 812 7728361
                 </a>
                 <div className='flex items-center pl-2  gap-3 bg-Teal py-4  rounded-xl text-white fit-content '>
-                    <a target='_blank' href="mailto:mogschoolofeconomics@gmail.com" className='flex justify-center  gap-3'>
+                    <a target='_blank' href="mailto:mogschoolofeconomics@gmail.com" className='flex justify-center items-center  gap-3'>
                     <AiOutlineMail className='text-white  text-3xl' />
-                    mogecons@gmail.com 
+                    <span className="text-center">mogschoolof<br/>economics@gmail.com </span>
+                    
                     </a>
                 </div>
                 <div className='flex items-center gap-3 py-4  font-bold'>

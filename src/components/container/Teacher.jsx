@@ -28,10 +28,11 @@ const Teacher = () => {
         className = ""
         width = "303px"
         height= " 335px"
-        url = "https://www.youtube.com/watch?v=ysz5S6PUM-U" />
+        url = "https://www.youtube.com/watch?v=tVhKmJCgHok-U" />
 
         <button className='py-3 mt-5 px-4 bg-Teal text-white rounded-lg text-sm font-bold'>
-              View YouTube
+          <a href="https://www.youtube.com/watch?v=tVhKmJCgHok-U" target="_blank" rel="noopener noreferrer">View on YouTube</a>
+              
             </button>
         </div>
         
