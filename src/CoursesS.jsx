@@ -1,110 +1,92 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu } from "@headlessui/react"
 import CoursesBody from './components/container/CoursesBody';
 import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine, RiSearch2Line } from "react-icons/ri";
+import { motion } from "framer-motion"
 import { courses } from "./Data";
 import Header from "../src/components/container/Header";
 import About from "./assets/About.jpeg";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Tab } from '@headlessui/react'
 import { coursess } from './Data';
 
 
+
 const CoursesS = () => {
+    const className = (...classes) => classes.filter(Boolean).join(' ');
+
     const [course, setcourse] = useState(courses);
     const [subject, setsubject] = useState('Economics')
     // const [subjectss, setsubjectss] = useState("Economics")
     const [level, setlevel] = useState("Select Level")
     const [levelss, setlevelss] = useState([]);
     const [open, setopen] = useState(false);
-
-    useEffect(() => {
-        const allLevels = course.map((course) => {
-            return course.Level
-        });
-        const uniqueLevels = ['Select Level', ...new Set(allLevels)]
-        setlevelss(uniqueLevels)
-    }, [])
-
-    const handleClick = () => {
-        
-        // const isDefault = (str) => {
-        //     if (typeof str !== 'string') {
-        //       throw new Error('Input is not a string');
-        //     }
-        //     return str.split(' ').includes("Level");
-        //   };
-          
-
-        // const newLevels = courses.filter((leveli) => {
-        //     const levelNum = parseInt(leveli.Level)
-
-            // if all values are default
-            // if (leveli.Level === subject) {
-            //     return leveli
-            // }
-            
-            // if level is default
-            // if (isDefault(level)) {
-            //     return leveli
-            // }
-
-            // if level is not default
-            // if(!isDefault(level)) {
-            //     return leveli.Level === level;
-            // }
-
-        // }) 
-        const isDefault = (str) => {
-            return str.split(' ').includes('Level')
-        }
-
-        const priceParse = parseInt(level)
-        const newLevels = courses.filter((leveli) => {
-            const levelNum = parseInt(leveli.Level);
+    const [cour, setCour] = useState(coursess)
 
 
-            if (levelNum === priceParse) {
-                return leveli
-            }
+    // console.log(coursess.All)
 
-            if (isDefault(level)) {
-                return leveli
-            }
+    // useEffect(() => {
+    //     const allLevels = course.map((course) => {
+    //         return course.Level
+    //     });
+    //     const uniqueLevels = ['Select Level', ...new Set(allLevels)]
+    //     setlevelss(uniqueLevels)
+    // }, [])
 
-            if (!isDefault(level)) {
-                if (levelNum === priceParse ) {
-                    return leveli
-                }
-            }
-        })
-    }
-    
-        const levelling = [
-            {
-                value: "Select level",
-            },
-            {
-                value: 100,
-            },
-            {
-                value: 200,
-            },
-            {
-                value: 300,
-            }
-        ]
+    // const handleClick = () => { 
+    //     const isDefault = (str) => {
+    //         return str.split(' ').includes('Level')
+    //     }
+
+    //     const priceParse = parseInt(level)
+    //     const newLevels = courses.filter((leveli) => {
+    //         const levelNum = parseInt(leveli.Level);
 
 
-    const opening = () => {
-        setopen(!open)
-    }
-  return (
-    <div className=''>
-    <Header title = "Our Courses" image = {About}>
-    Discover our wide range of economics courses and find the perfect one for your goals!
-    </Header>
-    <div className=''>
+    //         if (levelNum === priceParse) {
+    //             return leveli
+    //         }
+
+    //         if (isDefault(level)) {
+    //             return leveli
+    //         }
+
+    //         if (!isDefault(level)) {
+    //             if (levelNum === priceParse ) {
+    //                 return leveli
+    //             }
+    //         }
+    //     })
+    // }
+
+    //     const levelling = [
+    //         {
+    //             value: "Select level",
+    //         },
+    //         {
+    //             value: 100,
+    //         },
+    //         {
+    //             value: 200,
+    //         },
+    //         {
+    //             value: 300,
+    //         }
+    //     ]
+
+
+    // const opening = () => {
+    //     setopen(!open)
+    // }
+
+
+    return (
+        <div className=''>
+            <Header title="Our Courses" image={About}>
+                Discover our wide range of economics courses and find the perfect one for your goals!
+            </Header>
+            {/* <div className=''>
 
     
         <div className='px-[30px] py-6 max-w-[1170px] mx-auto flex flex-col lg:flex-row justify-between gap-4 lg:gap-x-3 relative lg:-top-4 lg:shadow-1 bg-white lg:bg-transparent lg:backdrop-blur rounded-lg'>
@@ -181,31 +163,56 @@ const CoursesS = () => {
             })
         }
         </div>
-    </div>
+    </div> */}
+            <div className="section">
+                <Tab.Group  >
+                    <Tab.List className="flex shadow-lg gap-2 space-x-1 rounded-xl bg-blue-900/20 p-1">
+                        {Object.keys(coursess).map((category) => (
+                            <Tab
+                                key={category}
+                                className={({ selected }) =>
+                                    className(
+                                        'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                                        'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none  focus:ring-2',
+                                        selected
+                                            ? 'bg-white shadow'
+                                            : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                                    )
+                                }
+                            >
+                                {category}
+                            </Tab>
+                        ))}
+                    </Tab.List>
+                    <Tab.Panels className=''>
+                        {Object.values(coursess).map((posts, idx) => (
+                            <Tab.Panel
+                                key={idx}
+                                className=""
+                            >
+                                <ul className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+                                    {posts.map((post) => (
+                                        <motion.li
+                                            initial={{ y: 100 }}
+                                            animate={{ y: 0 }}
+                                            transition={{ duration: 0.5 }}
+                                            key={post.id}
+                                            className="rounded-xl mt-6 p-2 bg-gradient shadow-2xl bg-white rounded-md"
+                                        >
+                                            <div key={course.id}>
+                                                <CoursesBody className=""  {...post} />
+                                            </div>
 
-{/* <Tab.Group >
-        <Tab.List className="flex shadow-lg gap-2 space-x-1 rounded-xl bg-blue-900/20 p-1">
-          {Object.keys(coursess).map((category) => (
-            <Tab
-              key={category}
-              className={({ selected }) =>
-                className(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none  focus:ring-2',
-                  selected
-                    ? 'bg-white shadow'
-                    : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
-                )
-              }
-            >
-              {category}
-            </Tab>
-          ))}
-        </Tab.List>
-
-      </Tab.Group> */}
-    </div>
-  )
+                                        </motion.li>
+                                    ))}
+                                </ul>
+                            </Tab.Panel>
+                        ))}
+                    </Tab.Panels>
+                </Tab.Group>
+            </div>
+        </div>
+    )
 }
 
 export default CoursesS

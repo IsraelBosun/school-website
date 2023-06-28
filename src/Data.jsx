@@ -272,7 +272,7 @@ export const coursess = {
    details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
  },
  {
-  id: 3,
+  id: 7,
   image: courses3,
   category: "Finance",
   title: "Macroeconomics for beginners",
@@ -345,44 +345,31 @@ export const coursess = {
 
 "200L": [
   {
-    id: 6,
-    image: courses6,
-    category: "History Of Economics",
-    title: "Intermediate Mathematical Economics I",
+    id: 1,
+    image: courses5,
+    category: "International Economics",
+    title: "Intermediate Microeconomics I",
     rating: 4.9,
     participants: 500,
     price: 1050,
-    Level: 300,
-    details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
+    Level: 200,
+    details: "This course builds on the principles of microeconomics introduced in the introductory course. Students will study more advanced topics such as game theory, externalities, and public goods, and will learn how to apply microeconomic models to real-world problems."
   },
   {
-   id: 3,
-   image: courses3,
-   category: "Finance",
-   title: "Macroeconomics for beginners",
-   rating: 4.9,
-   participants: 300,
-   price: 9900,
-   Level: 100,
-   details: "This course builds on the concepts introduced in the introductory macroeconomics course, and will cover topics such as economic fluctuations, international trade, monetary and fiscal policies, and the role of central banks in the economy. Students will learn how to analyze macroeconomic data and use basic models to understand the behavior of key macroeconomic variables. The course will also discuss current macroeconomic issues and debates, such as inflation, unemployment, and the effectiveness of government interventions."
- },
-  {
-   id: 8,
-   image: courses8,
-   category: "Quantitative Economics",
-   title: "Economic Development",
-   rating: 4.9,
-   participants: 500,
-   price: 1050,
-   Level: 200,
-   details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
- },
-
-
+    id: 2,
+    image: courses8,
+    category: "Quantitative Economics",
+    title: "Economic Development",
+    rating: 4.9,
+    participants: 500,
+    price: 1050,
+    Level: 200,
+    details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
+  }
 ],
  "300L": [
   {
-    id: 6,
+    id: 1,
     image: courses6,
     category: "History Of Economics",
     title: "Intermediate Mathematical Economics I",
@@ -392,28 +379,7 @@ export const coursess = {
     Level: 300,
     details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
   },
-  {
-   id: 3,
-   image: courses3,
-   category: "Finance",
-   title: "Macroeconomics for beginners",
-   rating: 4.9,
-   participants: 300,
-   price: 9900,
-   Level: 100,
-   details: "This course builds on the concepts introduced in the introductory macroeconomics course, and will cover topics such as economic fluctuations, international trade, monetary and fiscal policies, and the role of central banks in the economy. Students will learn how to analyze macroeconomic data and use basic models to understand the behavior of key macroeconomic variables. The course will also discuss current macroeconomic issues and debates, such as inflation, unemployment, and the effectiveness of government interventions."
- },
-  {
-   id: 8,
-   image: courses8,
-   category: "Quantitative Economics",
-   title: "Economic Development",
-   rating: 4.9,
-   participants: 500,
-   price: 1050,
-   Level: 200,
-   details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
- }
+
  ]
 }
 

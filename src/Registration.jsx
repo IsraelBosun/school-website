@@ -10,8 +10,8 @@ const semesters = [
   { level: '200 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false },
   { level: '300 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: true },
   { level: '300 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false },
-  { level: '400 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: false },
-  { level: '400 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: true }
+  // { level: '400 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: false },
+  // { level: '400 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: true }
 ];
 
 const Registration = () => {
