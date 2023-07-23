@@ -3,14 +3,23 @@ import { BsFillPenFill } from "react-icons/bs";
 import { BsBarChartLine } from "react-icons/bs";
 import { MdOutlineScience } from "react-icons/md";
 
-import courses1 from "./assets/courses1.jpeg";
-import courses2 from "./assets/courses2.jpeg";
-import courses3 from "./assets/courses3.jpeg";
-import courses4 from "./assets/courses4.jpeg";
-import courses5 from "./assets/courses5.jpeg";
-import courses6 from "./assets/courses6.jpeg";
+// import courses1 from "./assets/courses1.jpeg";
+// import courses2 from "./assets/courses2.jpeg";
+// import courses3 from "./assets/courses3.jpeg";
+// import courses4 from "./assets/courses4.jpeg";
+// import courses5 from "./assets/courses5.jpeg";
+// import courses6 from "./assets/courses6.jpeg";
+// import courses7 from "./assets/courses7.jpeg";
+// import courses8 from "./assets/courses8.jpeg";
+
+import courses1 from "./assets/Mmicroecons.jpg";
+import courses2 from "./assets/Mmathecons.jpg";
+import courses3 from "./assets/Mmacroecons.jpg";
+import courses4 from "./assets/Mnigerianeconomy.jpg";
+import courses5 from "./assets/Mintermicro.jpg";
+import courses6 from "./assets/Mintemediatemathecons.jpg";
 import courses7 from "./assets/courses7.jpeg";
-import courses8 from "./assets/courses8.jpeg";
+import courses8 from "./assets/Mecononsdev.jpg";
 
 import logo1 from "./assets/logo1.png";
 import logo2 from "./assets/logo2.png";
@@ -130,6 +139,7 @@ export const courses = [
     participants: 500,
     price: "#1000",
     Level: 100,
+    link: "https://paystack.com/buy/microeconomics-for-beginners"
   },
   {
     id: 2,
@@ -140,6 +150,7 @@ export const courses = [
     participants: 700,
     price: "#1200",
     Level: 100,
+    link: "https://paystack.com/buy/mathematical-economics-for-beginners"
   },
   {
     id: 3,
@@ -150,6 +161,7 @@ export const courses = [
     participants: 300,
     price: "#9900",
     Level: 100,
+    link: "https://paystack.com/buy/macroeconomics-for-beginners"
   },
   {
     id: 4,
@@ -160,6 +172,7 @@ export const courses = [
     participants: 600,
     price: "#8500",
     Level: 100,
+    link: "https://paystack.com/buy/the-nigerian-economy-"
   },
   {
     id: 5,
@@ -170,6 +183,7 @@ export const courses = [
     participants: 500,
     price: "#1050",
     Level: 200,
+    link: "https://paystack.com/buy/microeconomics-for-beginners"
   },
   {
     id: 6,
@@ -180,17 +194,19 @@ export const courses = [
     participants: 500,
     price: "#1050",
     Level: 300,
+    link: "https://paystack.com/buy/microeconomics-for-beginners"
   },
-  {
-    id: 7,
-    image: courses7,
-    category: "Applied Microeconomics",
-    title: "Intermediate Macroeconomics I",
-    rating: 4.9,
-    participants: 500,
-    price: "#1050",
-    Level: 300,
-  },
+  // {
+  //   id: 7,
+  //   image: courses7,
+  //   category: "Applied Microeconomics",
+  //   title: "Intermediate Macroeconomics I",
+  //   rating: 4.9,
+  //   participants: 500,
+  //   price: "#1050",
+  //   Level: 300,
+  //   link: "https://paystack.com/buy/microeconomics-for-beginners"
+  // },
   {
     id: 8,
     image: courses8,
@@ -200,6 +216,7 @@ export const courses = [
     participants: 500,
     price: "#1050",
     Level: 200,
+    link: "https://paystack.com/buy/microeconomics-for-beginners"
   },
 ];
 
@@ -214,7 +231,8 @@ export const coursess = {
    participants: 500,
    price: 1000,
    Level: 100,
-   details: "This course introduces the basic principles of microeconomics through lectures, case studies, and problem sets. Students will learn about topics such as supply and demand, consumer behavior, and market structures."
+   details: "This course introduces the basic principles of microeconomics through lectures, case studies, and problem sets. Students will learn about topics such as supply and demand, consumer behavior, and market structures.",
+   link: "https://paystack.com/buy/microeconomics-for-beginners"
  },
  {
    id: 2,
@@ -225,7 +243,8 @@ export const coursess = {
    participants: 700,
    price: 1200,
    Level: 100,
-   details: "This course will cover the fundamental concepts of macroeconomics, including national income, inflation, and unemployment. Students will also learn how to use mathematical models to analyze economic phenomena."
+   details: "This course will cover the fundamental concepts of macroeconomics, including national income, inflation, and unemployment. Students will also learn how to use mathematical models to analyze economic phenomena.",
+   link: "https://paystack.com/buy/mathematical-economics-for-beginners"
  },
  {
    id: 3,
@@ -236,7 +255,8 @@ export const coursess = {
    participants: 300,
    price: 9900,
    Level: 100,
-   details: "This course is an introduction to macroeconomic theory and policy. Students will study topics such as economic growth, monetary policy, and fiscal policy, and will learn how to evaluate macroeconomic policies using data and statistical techniques."
+   details: "This course is an introduction to macroeconomic theory and policy. Students will study topics such as economic growth, monetary policy, and fiscal policy, and will learn how to evaluate macroeconomic policies using data and statistical techniques.",
+   link: "https://paystack.com/buy/macroeconomics-for-beginners"
  },
  {
    id: 4,
@@ -247,7 +267,8 @@ export const coursess = {
    participants: 600,
    price: 8500,
    Level: 100,
-   details: "This course provides an overview of the Nigerian economy, including its history, current state, and future prospects. Students will learn about the factors that drive economic growth and development in Nigeria, and will analyze the country's economic policies and institutions."
+   details: "This course provides an overview of the Nigerian economy, including its history, current state, and future prospects. Students will learn about the factors that drive economic growth and development in Nigeria, and will analyze the country's economic policies and institutions.",
+   link: "https://paystack.com/buy/the-nigerian-economy-"
  },
  {
    id: 5,
@@ -258,7 +279,8 @@ export const coursess = {
    participants: 500,
    price: 1050,
    Level: 200,
-   details: "This course builds on the principles of microeconomics introduced in the introductory course. Students will study more advanced topics such as game theory, externalities, and public goods, and will learn how to apply microeconomic models to real-world problems."
+   details: "This course builds on the principles of microeconomics introduced in the introductory course. Students will study more advanced topics such as game theory, externalities, and public goods, and will learn how to apply microeconomic models to real-world problems.",
+   link: "https://paystack.com/buy/intermediate-microeconomics"
  },
  {
    id: 6,
@@ -269,19 +291,21 @@ export const coursess = {
    participants: 500,
    price: 1050,
    Level: 300,
-   details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
+   details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis.",
+   link: "https://paystack.com/buy/intermediate-mathematical-economics"
  },
- {
-  id: 7,
-  image: courses3,
-  category: "Finance",
-  title: "Macroeconomics for beginners",
-  rating: 4.9,
-  participants: 300,
-  price: 9900,
-  Level: 100,
-  details: "This course builds on the concepts introduced in the introductory macroeconomics course, and will cover topics such as economic fluctuations, international trade, monetary and fiscal policies, and the role of central banks in the economy. Students will learn how to analyze macroeconomic data and use basic models to understand the behavior of key macroeconomic variables. The course will also discuss current macroeconomic issues and debates, such as inflation, unemployment, and the effectiveness of government interventions."
-},
+//  {
+//   id: 7,
+//   image: courses3,
+//   category: "Finance",
+//   title: "Macroeconomics for beginners",
+//   rating: 4.9,
+//   participants: 300,
+//   price: 9900,
+//   Level: 100,
+//   details: "This course builds on the concepts introduced in the introductory macroeconomics course, and will cover topics such as economic fluctuations, international trade, monetary and fiscal policies, and the role of central banks in the economy. Students will learn how to analyze macroeconomic data and use basic models to understand the behavior of key macroeconomic variables. The course will also discuss current macroeconomic issues and debates, such as inflation, unemployment, and the effectiveness of government interventions.",
+//   link: "https://paystack.com/buy/mathematical-economics-for-beginners"
+// },
  {
   id: 8,
   image: courses8,
@@ -291,7 +315,8 @@ export const coursess = {
   participants: 500,
   price: 1050,
   Level: 200,
-  details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
+  details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization.",
+  link: "https://paystack.com/buy/economic-development"
 }
 ],
 
@@ -305,7 +330,8 @@ export const coursess = {
     participants: 500,
     price: 1000,
     Level: 100,
-    details: "This course introduces the basic principles of microeconomics through lectures, case studies, and problem sets. Students will learn about topics such as supply and demand, consumer behavior, and market structures."
+    details: "This course introduces the basic principles of microeconomics through lectures, case studies, and problem sets. Students will learn about topics such as supply and demand, consumer behavior, and market structures.",
+    link: "https://paystack.com/buy/microeconomics-for-beginners"
   },
   {
     id: 2,
@@ -316,7 +342,8 @@ export const coursess = {
     participants: 700,
     price: 1200,
     Level: 100,
-    details: "This course will cover the fundamental concepts of macroeconomics, including national income, inflation, and unemployment. Students will also learn how to use mathematical models to analyze economic phenomena."
+    details: "This course will cover the fundamental concepts of macroeconomics, including national income, inflation, and unemployment. Students will also learn how to use mathematical models to analyze economic phenomena.",
+    link: "https://paystack.com/buy/mathematical-economics-for-beginners"
   },
   {
     id: 3,
@@ -327,7 +354,8 @@ export const coursess = {
     participants: 300,
     price: 9900,
     Level: 100,
-    details: "This course is an introduction to macroeconomic theory and policy. Students will study topics such as economic growth, monetary policy, and fiscal policy, and will learn how to evaluate macroeconomic policies using data and statistical techniques."
+    details: "This course is an introduction to macroeconomic theory and policy. Students will study topics such as economic growth, monetary policy, and fiscal policy, and will learn how to evaluate macroeconomic policies using data and statistical techniques.",
+    link: "https://paystack.com/buy/macroeconomics-for-beginners"
   },
   {
     id: 4,
@@ -338,7 +366,8 @@ export const coursess = {
     participants: 600,
     price: 8500,
     Level: 100,
-    details: "This course provides an overview of the Nigerian economy, including its history, current state, and future prospects. Students will learn about the factors that drive economic growth and development in Nigeria, and will analyze the country's economic policies and institutions."
+    details: "This course provides an overview of the Nigerian economy, including its history, current state, and future prospects. Students will learn about the factors that drive economic growth and development in Nigeria, and will analyze the country's economic policies and institutions.",
+    link: "https://paystack.com/buy/the-nigerian-economy-"
   },
 ],
 
@@ -353,7 +382,8 @@ export const coursess = {
     participants: 500,
     price: 1050,
     Level: 200,
-    details: "This course builds on the principles of microeconomics introduced in the introductory course. Students will study more advanced topics such as game theory, externalities, and public goods, and will learn how to apply microeconomic models to real-world problems."
+    details: "This course builds on the principles of microeconomics introduced in the introductory course. Students will study more advanced topics such as game theory, externalities, and public goods, and will learn how to apply microeconomic models to real-world problems.",
+    link: "https://paystack.com/buy/intermediate-microeconomics"
   },
   {
     id: 2,
@@ -364,7 +394,8 @@ export const coursess = {
     participants: 500,
     price: 1050,
     Level: 200,
-    details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization."
+    details: "This course will cover the theories and practices of economic development, with a focus on low and middle-income countries. Students will learn about different development models, policies, and strategies, and will explore case studies of successful and unsuccessful development experiences. The course will also discuss contemporary debates on development, including issues related to sustainability, inequality, and globalization.",
+    link: "https://paystack.com/buy/economic-development"
   }
 ],
  "300L": [
@@ -377,7 +408,8 @@ export const coursess = {
     participants: 500,
     price: 1050,
     Level: 300,
-    details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis."
+    details: "This course is a continuation of the mathematical economics sequence, and will cover topics such as optimization, linear algebra, and dynamic programming. Students will develop the mathematical tools necessary for advanced economic analysis.",
+    link: "https://paystack.com/buy/intermediate-mathematical-economics"
   },
 
  ]

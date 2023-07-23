@@ -4,12 +4,12 @@ import Header from './components/container/Header';
 import About from "./assets/About.jpeg"
 
 const semesters = [
-  { level: '100 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: true },
-  { level: '100 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false },
-  { level: '200 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: true },
-  { level: '200 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false },
-  { level: '300 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: true },
-  { level: '300 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false },
+  { level: '100 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: true, link: "" },
+  { level: '100 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false, link: "https://paystack.com/buy/100l-second-semester-registration" },
+  { level: '200 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: true, link: "" },
+  { level: '200 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false, link: "https://paystack.com/buy/200l-secons-semester-registration" },
+  { level: '300 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: true, link: "" },
+  { level: '300 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: false, link: "https://paystack.com/buy/300l-second-semester-registration" },
   // { level: '400 Level', semester: 'First Semester', resumptionDate: 'September 1, 2023', isActive: false },
   // { level: '400 Level', semester: 'Second Semester', resumptionDate: 'January 1, 2024', isActive: true }
 ];
@@ -28,10 +28,10 @@ const Registration = () => {
           <p className="text-gray-500 mb-2">{semester.semester}</p>
           <p className="text-gray-500 mb-2">Resumption Date: {semester.resumptionDate}</p>
           {semester.isActive ? (
-            <p className="text-red-500 font-bold">Currently in session</p>
+            <p className="text-red-500 font-bold">Not in session</p>
           ) : (
             <button className="bg-green-500 hover:bg-white text-white hover:text-green-600 border font-bold py-2 px-4 rounded">
-              <Link to="">Register</Link>
+              <a href = {semester.link} target="_blank" rel="noopener noreferrer">Register</a>
             </button>
           )}
         </div>

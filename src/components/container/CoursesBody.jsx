@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineUser, AiOutlineStar } from "react-icons/ai"
 
-const CoursesBody = ({image, category, title, participants, rating, price, Level}) => {
+const CoursesBody = ({image, category, title, participants, rating, price, link}) => {
   return (
     <div className='w-max-[40px] p-2 shadow-lg min-w-[15rem] bg-white rounded-md'>
         <img src={image}   alt="courses" />
@@ -29,7 +29,7 @@ const CoursesBody = ({image, category, title, participants, rating, price, Level
             </div>
         </div>
         <div className='flex items-center mt-6 justify-center'>
-        <button className='border  hover:border-white  hover:border-radius-2xl hover:bg-Teal hover:text-white rounded-lg px-5 py-1'>Enroll</button>
+        <a href={link} target="_blank" rel="noopener noreferrer" className='border  hover:border-white  hover:border-radius-2xl hover:bg-Teal hover:text-white rounded-lg px-5 py-1'>Enroll</a>
         </div>
     </div>
   )
