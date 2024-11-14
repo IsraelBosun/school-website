@@ -36,7 +36,7 @@ const Courses = () => {
           Our Top <span className='text-Teal'>Categories</span>
         </div>
         <p className='text-sm text-gray leading-7 max-width-[700px] mx-auto'>
-        Our Economics tutorial website offers a wide range of top categories to choose from, including macroeconomics, microeconomics, finance, international trade, and economic history       
+        The courses include Microeconomics, Mathematical Economics, Macroeconomics, Econometrics, History of Economic Thought, etc.       
          </p>
       </div>
 

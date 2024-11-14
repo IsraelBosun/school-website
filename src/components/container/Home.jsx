@@ -55,7 +55,7 @@ const Home = () => {
       </div>
       <div>
         <p className="text-center text-xl">
-          We have students from over{" "}
+        We WELCOME students from{" "}
           <span className="text-Teal">
             100+ leading universities in Nigeria
           </span>

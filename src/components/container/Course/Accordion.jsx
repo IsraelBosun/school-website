@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsChevronDown } from "react-icons/bs"
 import { motion, AnimatePresence } from "framer-motion"
 
-const Accordion = ({ id, title }) => {
+const Accordion = ({ id, title, body }) => {
     const [activeIndex, setActiveIndex] = useState(null);
     
     const handleClick = (id) => {
@@ -25,9 +25,7 @@ const Accordion = ({ id, title }) => {
                 style = {{overflow: "hidden" }}
                 className = "pt-4"
                 >
-                    <p className='text-sm leading-7 text-gray'>
-                    Our Economics online education classes are designed to provide university students with a comprehensive understanding of economic concepts and principles. Our courses cover a range of topics, from micro and macroeconomics to international trade and finance. Our instructors are experienced educators and industry professionals, committed to providing high-quality and engaging learning experiences. With flexible scheduling and accessible course materials, our classes are suitable for students of all levels of economic knowledge.
-                    </p>
+                    <p className='text-sm leading-7 text-gray'>{body}</p>
                 </motion.div>
             )}
         </AnimatePresence>

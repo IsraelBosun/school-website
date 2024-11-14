@@ -52,12 +52,12 @@ const Navbar = () => {
               return <NavLink key={navLink.id} {...navLink} />;
             })}
           </div>
-          <button className="relative py-3 px-6 font-bold text-Teal text-3xl">
+          {/* <button className="relative py-3 px-6 font-bold text-Teal text-3xl">
             <AiOutlineShoppingCart 
             onClick={() => setShowCart(true)}
             />
             <div className="absolute top-0 right-4 w-4  h-4 rounded-full  text-xs bg-red-700 text-white ">{totalQuantities}</div>
-          </button>
+          </button> */}
           {toggle && (
             <motion.div
               initial={{ x: -500, opacity: 0 }}

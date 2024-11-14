@@ -24,9 +24,9 @@ const Course = ({image, category, title, participants, rating, price, link}) => 
                     {rating}
                 </div>
             </div>
-            <div className='text-sm font-bold'>
+            {/* <div className='text-sm font-bold'>
                 {price}
-            </div>
+            </div> */}
         </div>
         <div className='flex items-center mt-6 justify-center'>
         <a href={link} target="_blank" rel="noopener noreferrer" className='border  hover:border-white  hover:border-radius-2xl hover:bg-Teal hover:text-white rounded-lg px-5 py-1'>Enroll</a>

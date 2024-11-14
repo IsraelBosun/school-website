@@ -12,7 +12,7 @@ import { MdOutlineScience } from "react-icons/md";
 // import courses7 from "./assets/courses7.jpeg";
 // import courses8 from "./assets/courses8.jpeg";
 
-import courses1 from "./assets/Mmicroecons.jpg";
+import courses1 from "./assets/Godwin1.jpeg";
 import courses2 from "./assets/Mmathecons.jpg";
 import courses3 from "./assets/Mmacroecons.jpg";
 import courses4 from "./assets/Mnigerianeconomy.jpg";
@@ -122,9 +122,10 @@ export const subjects = [
     level: "300L",
     first: "1. Intermediate Microeconomics II",
     second: "2. Intermediate Mathematical Economics II",
-    third: "3. Intermediate Macroeconomics II",
-    forth: "4. Econometrics",
-    fifth: "5. Research writing",
+    third: "3. History of Economic Thought",
+    forth: "4. Intermediate Macroeconomics II",
+    fifth: "5. Econometrics",
+    sixth: "6. Research writing",
     button: "Enroll"
   },
 ]
@@ -422,18 +423,22 @@ export const accordions = [
   {
     id: 1,
     title: "What is MOG school of Economics?",
+    body: 'MOG School of Economics is an e-learning platform dedicated to enhancing the academic success of Economics undergraduates across various tertiary institutions. Our hybrid-education model offers comprehensive courses that provide a deep understanding of key economic concepts and principles, covering a broad range of topics such as Microeconomics, Macroeconomics, Mathematical Economics, Econometrics, Economic Development, and the History of Economic Thought. Led by experienced educators and industry professionals, our courses ensure a high-quality, engaging learning experience with flexible scheduling and easily accessible materials for students at all levels of economic knowledge.'
   },
   {
     id: 2,
     title: "What is the format of your online courses?",
+    body: 'The school integrates its YouTube channel, MOG Economics, and WhatsApp platforms to provide flexible, comprehensive, and in-depth Economics lessons across undergraduate levels. The lessons are structured to be easily understood by learners, ensuring they are detailed and thorough. Students are grouped into their respective WhatsApp classes, where lessons and relevant resources are shared topic by topic. They also have the opportunity to interact directly with their course facilitators at any time. Learners are regularly assessed through exercises, quizzes, and exams to evaluate their retention, critical thinking, teamwork, and real-world application skills.'
   },
   {
     id: 3,
     title: "What level of Economics expertise do I need to have to enroll in your courses?",
+    body: "You're only required to have at least a fair understanding of Basic Economics from high school, and we'll take it from there."
   },
   {
     id: 4,
-    title: "How much do your courses cost?",
+    title: "How much do the program cost?",
+    body: "Each semester (3 months) may cost between 12,000 naira to 30,000 naira depending on the level of study, number of courses and other considerations."
   },
 ];
 
@@ -487,45 +492,45 @@ export const tutors = [
   {
   id: 1,
   image: courses1,
-  name: 'Sola Adebowale',
-  job: 'Principles of Microeconomics',
-  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  name: 'Godwin Oluwole',
+  job: 'Lead Tutor',
+  socials: ['https://instagram.com/', 'https://x.com/Godwin11516293?t=pB-fpmx5x-9pdXIciXAexg&s=08', 'https://facebook.com/', 'https://www.linkedin.com/in/godwin-oluwole-3225bb191?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app']
   },
-  {
-  id: 2,
-  image: courses2,
-  name: 'Daniel Akinlade',
-  job: 'Macroeconomic Theory',
-  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-  },
-  {
-  id: 3,
-  image: courses3,
-  name: 'Edem Okonkwo',
-  job: 'International Trade',
-  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-  },
-  {
-  id: 4,
-  image: courses4,
-  name: 'Chukwuemeka Onyekachi',
-  job: 'Development Economics',
-  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-  },
-  {
-  id: 5,
-  image: courses5,
-  name: 'Diana Okafor',
-  job: 'Monetary Economics',
-  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-  },
-  {
-  id: 6,
-  image: courses6,
-  name: 'Wayne Adeleke',
-  job: 'Econometrics',
-  socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-  }
+  // {
+  // id: 2,
+  // image: courses2,
+  // name: 'Daniel Akinlade',
+  // job: 'Macroeconomic Theory',
+  // socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  // },
+  // {
+  // id: 3,
+  // image: courses3,
+  // name: 'Edem Okonkwo',
+  // job: 'International Trade',
+  // socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  // },
+  // {
+  // id: 4,
+  // image: courses4,
+  // name: 'Chukwuemeka Onyekachi',
+  // job: 'Development Economics',
+  // socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  // },
+  // {
+  // id: 5,
+  // image: courses5,
+  // name: 'Diana Okafor',
+  // job: 'Monetary Economics',
+  // socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  // },
+  // {
+  // id: 6,
+  // image: courses6,
+  // name: 'Wayne Adeleke',
+  // job: 'Econometrics',
+  // socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+  // }
   ]
 
   export const validateEmail = (email) => {

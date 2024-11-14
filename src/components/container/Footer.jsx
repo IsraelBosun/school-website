@@ -38,9 +38,13 @@ const Footer = () => {
         <div>
           <div className='font-bold mb-6'>Follow Us</div>
           <div className='text-sm mb-4'>
-            mogschoolofeconomics@gmail.com
-          </div>
-          <div className ="text-sm">+234950949333</div>
+  <a href="mailto:mogschoolofeconomics@gmail.com">mogschoolofeconomics@gmail.com</a>
+</div>
+
+          <a href="tel:+2348127728361" className="text-sm">
+  +234 812 772 8361
+</a>
+
           <div className='flex items-center justify-center gap-4 mt-4 w-full' >
             <a href="" className='hover:scale-110 text-xl'><BsFacebook /></a>
             <a href="" className='hover:scale-110 text-xl'><BsInstagram /></a>

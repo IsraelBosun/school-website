@@ -20,10 +20,10 @@ const Subjects = ({ level, first, second, third, forth, fifth, button }) => {
         <ul className="mx-2 p-2 flex flex-col gap-3 border rounded-lg hover:bg-white hover:text-Teal text-xs">
           <li>{first}</li>
           <li>{second}</li>
+          <li>{third}</li>
         </ul >
         <p className="text-center mt-7 py-2 text-sm font-bold">Second Semester</p>
         <ul className="mx-2 p-2  flex flex-col gap-3 border rounded-lg  hover:bg-white hover:text-Teal text-xs">
-          <li>{third}</li>
           <li>{forth}</li>
           <li>{fifth}</li>
         </ul>

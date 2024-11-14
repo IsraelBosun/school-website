@@ -27,7 +27,7 @@ const ContactUs = () => {
                 <div className='flex items-center gap-3 py-4  font-bold'>
                     <AiOutlineWhatsApp className='text-Teal text-3xl' />
                 </div>    
-                     +234 812 7728361
+                +234 812 772 8361
                 </a>
                 <div className='flex items-center pl-2  gap-3 bg-Teal py-4  rounded-xl text-white fit-content '>
                     <a target='_blank' href="mailto:mogschoolofeconomics@gmail.com" className='flex justify-center items-center  gap-3'>
