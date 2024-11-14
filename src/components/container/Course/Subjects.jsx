@@ -28,8 +28,7 @@ const Subjects = ({ level, first, second, third, forth, fifth, button }) => {
           <li>{fifth}</li>
         </ul>
             <div className=" mt-5 flex justify-center text-sm">
-          <button className=" bg-Teal text-white hover:bg-white hover:text-Teal border text-center px-6 py-2 mx-auto  max-w-full  rounded-md">{button}</button>
-          
+          {/* <button className=" bg-Teal text-white hover:bg-white hover:text-Teal border text-center px-6 py-2 mx-auto  max-w-full  rounded-md">{button}</button> */}
           </div>
           <p className="text-center text-[12px] font-bold "> NB: Each  Semester lasts for 3 months</p>
       </motion.div>

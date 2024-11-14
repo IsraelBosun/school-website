@@ -12,7 +12,8 @@ import { MdOutlineScience } from "react-icons/md";
 // import courses7 from "./assets/courses7.jpeg";
 // import courses8 from "./assets/courses8.jpeg";
 
-import courses1 from "./assets/Godwin1.jpeg";
+import courses1 from "./assets/Mintermicro.jpg";
+import godwin from "./assets/Godwin1.jpeg";
 import courses2 from "./assets/Mmathecons.jpg";
 import courses3 from "./assets/Mmacroecons.jpg";
 import courses4 from "./assets/Mnigerianeconomy.jpg";
@@ -491,7 +492,7 @@ export const data = [
 export const tutors = [
   {
   id: 1,
-  image: courses1,
+  image: godwin,
   name: 'Godwin Oluwole',
   job: 'Lead Tutor',
   socials: ['https://instagram.com/', 'https://x.com/Godwin11516293?t=pB-fpmx5x-9pdXIciXAexg&s=08', 'https://facebook.com/', 'https://www.linkedin.com/in/godwin-oluwole-3225bb191?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app']
